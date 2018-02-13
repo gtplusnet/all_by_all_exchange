@@ -20,7 +20,7 @@
 				</div>
 				
 				<div class="landing-footer">
-					<div class="text">All Rights Reserved &copy; 2018 anyband.com</div>
+					<div class="text">All Rights Reserved &copy; 2018 allbyall.com</div>
 				</div>
 
 			</div>

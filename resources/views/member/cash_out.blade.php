@@ -9,14 +9,14 @@
 		<div class="content-wrapper">
 			<div class="container">
 				<div class="holder">
-					<div class="head-text row-no-padding clearfix">
+					<div class="head-text row no-gutters clearfix">
 						<div class="col-md-3 col-sm-3 col-xs-3"><div class="text-container t-center t-orange">Method</div></div>
 						<div class="col-md-3 col-sm-3 col-xs-3"><div class="text-container t-center">Amount</div></div>
 						<div class="col-md-3 col-sm-3 col-xs-3"><div class="text-container t-center">Recipient</div></div>
 						<div class="col-md-3 col-sm-3 col-xs-3"><div class="text-container t-center">Payment</div></div>
 					</div>
 					<div class="head-text-img t-center"><img src="/assets/img/c2-step1.png"></div>
-					<div class="head-text-2 row-no-padding clearfix pt-35">
+					<div class="head-text-2 row no-gutters clearfix pt-35">
 						<div class="col-md-3 col-sm-3 col-xs-3"><div class="head-text-img2"><img src="/assets/img/cashout-vector.png"></div></div>
 						<div class="col-md-9 col-sm-9 col-xs-9"><div class="text-container">How should we send the money?</div></div>
 					</div>

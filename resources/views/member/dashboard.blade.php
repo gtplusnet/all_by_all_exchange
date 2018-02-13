@@ -12,7 +12,7 @@
 			<!--PESO AND WALLET-->
 			<div class="row clearfix">
 				<div class="col-md-6">
-					<div class="holder match-height">
+					<div class="holder peso-wallet match-height">
 						<div class="top">
 							<div class="holder-title">PESO WALLET</div>
 							<div class="button-holder">
@@ -41,7 +41,7 @@
 					</div>
 				</div>
 				<div class="col-md-6">
-					<div class="holder match-height">
+					<div class="holder all-wallet match-height">
 						<div class="top">
 							<div class="holder-title">ALL WALLET</div>
 							<div class="button-holder">
@@ -71,7 +71,7 @@
 			<!--GET STARTED WITH A BAND-->
 			<div class="row clearfix">
 				<div class="col-md-12">
-					<div class="holder">
+					<div class="holder get-started">
 						<div class="top">
 							<div class="holder-title">GET STARTED WITH ANY BAND</div>
 						</div>

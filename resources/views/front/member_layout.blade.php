@@ -8,7 +8,8 @@
 		<div class="logo-holder">
 			<div id="nav_list" onclick="on()"><i class="fa fa-bars hamburger"></i></div>
 			<a href="/">
-				<img src="/assets/img/logo.png" alt="">
+				<img src="/assets/img/allbyall-logo.png" alt="" width="30">
+				ALL BY ALL INC.
 			</a>
 		</div>
 
