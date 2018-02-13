@@ -9,7 +9,7 @@
 		</div>
 
    		<div class="registration-container">
-   			<form method="post" action="/dashboard">
+   			<form method="post" action="/member/dashboard">
     			{{csrf_field()}}
 
                 <div class="flex-me">
