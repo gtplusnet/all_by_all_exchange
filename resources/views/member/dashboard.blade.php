@@ -16,7 +16,7 @@
 						<div class="top">
 							<div class="holder-title">PESO WALLET</div>
 							<div class="button-holder">
-								<a class="btn btn-wall-add" href="javascript:"> WALLET ADDRESS <img src="/assets/img/wall-add.png" alt=""></a>
+								<a class="btn btn-wall-add" href="javascript:"> WALLET ADDRESS {{-- <img src="/assets/img/wall-add.png" alt=""> --}}</a>
 							</div>
 						</div>
 						<div class="bottom">
@@ -41,11 +41,11 @@
 					</div>
 				</div>
 				<div class="col-md-6">
-					<div class="holder all-wallet match-height">
+					<div class="holder bitcoin-wallet match-height">
 						<div class="top">
-							<div class="holder-title">ALL WALLET</div>
+							<div class="holder-title">BITCOIN WALLET</div>
 							<div class="button-holder">
-								<a class="btn btn-convert" href="javascript:">CONVERT <img src="/assets/img/convert-icon.png" alt=""></a>
+								<a class="btn btn-convert" href="javascript:">CONVERT {{-- <img src="/assets/img/convert-icon.png" alt=""> --}}</a>
 							</div>
 						</div>
 						<div class="bottom">
@@ -122,7 +122,7 @@
 			<!--HISTORY AND REQUEST-->
 			<div class="row clearfix">
 				<div class="col-md-12">
-					<div class="holder">
+					<div class="holder history-holder">
 						<div class="top">
 							<div class="holder-title">
 								<nav class="nav">
@@ -132,10 +132,10 @@
 								</nav>
 							</div>
 							<div class="button-holder">
-								<a class="btn btn-down-history" href="javascript:">DOWNLOAD HISTORY <img src="/assets/img/download-history-icon.png" alt=""></a>
+								<a class="btn btn-down-history" href="javascript:">DOWNLOAD HISTORY {{-- <img src="/assets/img/download-history-icon.png" alt=""> --}}</a>
 							</div>
 						</div>
-						<div class="bottom tab-content">
+						<div class="bottom tab-content text-center">
 							<div id="history" class="tab-pane fade in active">
 								<div class="explaination">There are no transactions yet.</div>
 							</div>

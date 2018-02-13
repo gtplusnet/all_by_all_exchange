@@ -59,41 +59,6 @@ $bold: 700;
 			{
 				flex-grow: 1;
 				font-weight: $bold;
-
-				nav
-				{
-					a
-					{
-						text-decoration: none;
-					}
-					
-					span
-					{
-						padding: 0 10px;
-					}
-
-					.tab-link
-					{
-						@include transition(0.2s);
-						
-						&:hover
-						{
-							border-bottom: 2px solid #ff3503;
-							padding-bottom: 15px;
-						}
-					}
-
-					.history
-					{
-						color: #454545;
-					}
-
-					.request
-					{
-						color: #a4a4a4;
-					}
-				}
-
 			}
 
 			.button-holder
@@ -106,17 +71,17 @@ $bold: 700;
 					@include transition(0.3s);
 					text-decoration: none;
 					border-radius: 0;
-					border: 1px solid #fd6537;
+					border: 1px solid #daa215;
 					background-color: inherit;
-					color: #fd6537;
+					color: #daa215;
 					font-family: $display-text;
 					font-size: 13px;
 					font-weight: $bold;
 
 					&:hover
 					{
-						border: 1px solid #ff3503;
-						color: #ff3503;
+						border: 1px solid #daa215;
+						color: #daa215;
 					}
 				}
 
@@ -125,172 +90,224 @@ $bold: 700;
 					@extend .btn-wall-add;
 				}
 			}
-
-			.btn-down-history
-			{
-				@include transition(0.3s);
-				font-family: $display-text;
-				color: #fd6537;
-				font-size: 13px;
-				font-weight: $bold;
-
-				&:hover
-				{
-					color: #ff3503;
-				}
-			}
 		}
 
 		.bottom
 		{
 			padding: 60px 15px;
+		}
+	}
 
-			.left
+	//PESO WALLET
+	.peso-wallet
+	{
+		.left
+		{
+			text-align: center;
+			vertical-align: middle;
+
+			.text-price
 			{
-				text-align: center;
-				vertical-align: middle;
+				font-family: $content-text;
+				font-size: 40px;
+				font-weight: 400;
+				color: #daa215;
 
-				.text-price
+				@media screen and (max-width: 500px)
 				{
-					font-family: $content-text;
-					font-size: 40px;
-					font-weight: 400;
-					color: #ff3503;
-
-					@media screen and (max-width: 500px)
-					{
-						font-size: 25px;
-					}
+					font-size: 25px;
 				}
 			}
+		}
 
-			.right
+		.right
+		{
+			.btn-container	
 			{
-				.btn-container	
+				display: block;
+
+				.btn-request
 				{
-					display: block;
+					@include transition(0.3s);
+					border-radius: 0;
+					background-color: #daa215;
+					color: #fff;
+					margin-right: 15px;
+
+					img
+					{
+						border-right: 1px solid #fff;
+						padding: 3px 5px;
+					}
+
+					&:hover
+					{
+						background-color: #daa215;
+					}
+				}
+
+				.btn-send
+				{
+					margin-top: 10px;
+					@extend .btn-request;
+					
+					&:hover
+					{
+						background-color: #daa215;
+					}
+				}
+
+				@media screen and (max-width: 500px)
+				{
+					padding-top: 15px;
 
 					.btn-request
 					{
-						@include transition(0.3s);
-						border-radius: 0;
-						background-color: #fd6537;
-						color: #fff;
-						margin-right: 15px;
-
-						img
-						{
-							border-right: 1px solid #fff;
-							padding: 3px 5px;
-						}
-
-						&:hover
-						{
-							background-color: #ff3503;
-						}
+						width: 100%;
 					}
 
 					.btn-send
 					{
-						margin-top: 10px;
-						@extend .btn-request;
-						
-						&:hover
-						{
-							background-color: #ff3503;
-						}
-					}
-
-					@media screen and (max-width: 500px)
-					{
-						padding-top: 15px;
-
-						.btn-request
-						{
-							width: 100%;
-						}
-
-						.btn-send
-						{
-							width: 100%;
-						}
+						width: 100%;
 					}
 				}
-
 			}
 
-			.all-wallets
+		}
+	}
+
+	//BITCOIN WALLET
+	.bitcoin-wallet
+	{
+		.all-wallets
+		{
+			text-align: center;
+			cursor: pointer;
+			padding-bottom: 50px;
+			padding-top: 10px;
+			
+			.php
 			{
-				text-align: center;
-				cursor: pointer;
-				padding-bottom: 50px;
-				padding-top: 10px;
-				
-				.php
-				{
-					color: #454545;
-				}
-
-				.btc
-				{
-					color: #a4a4a4;
-				}
-
-				.converted-price
-				{
-					font-family: $content-text;
-					font-weight: 400;
-					font-size: 30px;
-				}
-
-				.currency
-				{
-					font-family: $display-text;
-					font-weight: $bold;
-					font-size: 15px;
-					color: #ff3503;
-				}
-
-				&:hover
-				{
-					border-bottom: 2px solid #ff3503;
-				}
-			}
-
-			.icon-holder
-			{
-				text-align: center;
-				margin-top: 10px;
-			}
-
-			.label-container
-			{
-				text-align: center;
-				font-family: $display-text;
-				font-weight: $reg;
-
-				.label1
-				{
-					font-size: 15px;
-					color: #454545;
-					padding-top: 10px;
-				}
-
-				.label2
-				{
-					font-size: 11px;
-					color: #a4a4a4;
-					padding-top: 10px;
-				}
-			}
-
-			.explaination
-			{
-				font-family: $display-text;
 				color: #454545;
+			}
+
+			.btc
+			{
+				color: #a4a4a4;
+			}
+
+			.converted-price
+			{
+				font-family: $content-text;
+				font-weight: 400;
+				font-size: 30px;
+			}
+
+			.currency
+			{
+				font-family: $display-text;
+				font-weight: $bold;
 				font-size: 15px;
-				text-align: center;
-				font-weight: $reg;
+				color: #daa215;
+			}
+
+			&:hover
+			{
+				border-bottom: 2px solid #daa215;
+			}
+		}
+	}
+
+	//GET STARTED
+	.get-started
+	{
+		.icon-holder
+		{
+			text-align: center;
+			margin-top: 10px;
+		}
+
+		.label-container
+		{
+			text-align: center;
+			font-family: $display-text;
+			font-weight: $reg;
+
+			.label1
+			{
+				font-size: 15px;
+				color: #454545;
+				padding-top: 10px;
+			}
+
+			.label2
+			{
+				font-size: 11px;
+				color: #a4a4a4;
+				padding-top: 10px;
+			}
+		}
+
+		.explaination
+		{
+			font-family: $display-text;
+			color: #454545;
+			font-size: 15px;
+			text-align: center;
+			font-weight: $reg;
+		}
+	}
+
+	.history-holder
+	{
+		.holder-title
+		{
+			nav
+			{
+				a
+				{
+					text-decoration: none;
+				}
+				
+				span
+				{
+					padding: 0 10px;
+				}
+
+				.tab-link
+				{
+					@include transition(0.2s);
+					
+					// &:hover
+					// {
+					// 	border-bottom: 2px solid #daa215;
+					// 	padding-bottom: 15px;
+					// }
+				}
+			}
+			
+			.history
+			{
+				color: #454545;
+			}
+
+			.request
+			{
+				color: #a4a4a4;
+			}
+		}
+
+		.btn-down-history
+		{
+			@include transition(0.3s);
+			font-family: $display-text;
+			color: #daa215;
+			font-size: 13px;
+			font-weight: $bold;
+
+			&:hover
+			{
+				color: #daa215;
 			}
 		}
 	}
