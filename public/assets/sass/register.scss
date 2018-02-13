@@ -1,0 +1,157 @@
+$display-text: 'Noto Sans', sans-serif;
+$reg: 400;
+$bold: 700;
+
+@mixin transition($transition) 
+{
+    -webkit-transition: all $transition ease-in-out;
+    -moz-transition: all $transition ease-in-out;
+    -o-transition: all $transition ease-in-out;
+    transition: all $transition ease-in-out;
+}
+
+.full-screen
+{
+	background-color: #FFF;
+	position: relative;
+	height: 100vh;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: -webkit-flex;
+	/* Safari */
+	-webkit-align-items: center;
+	/* Safari 7.0+ */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	.login-holder
+	{
+		
+		.logo-holder
+		{
+			text-align: center;
+		}
+
+		.registration-container
+		{
+			form
+			{
+				.flex-me
+				{
+					display: flex;
+					align-items: center;
+					justify-content: center;
+
+					.left
+					{
+						flex-basis: 500px;
+					}
+
+					.right
+					{
+						flex-basis: 500px;
+					}
+				}
+
+				.bottom
+				{
+					
+				}
+
+				.form-group
+				{
+					margin: 10px;
+
+					input
+					{
+						font-family: $display-text;
+						border: none;
+						border-bottom: 1px solid rgba(0,0,0,0.3);
+						width: 100%;
+						padding: 10px 5px;
+						color: #585858;
+						margin-top: 20px;
+						font-size: 15px;
+					}
+				}
+			}
+		}
+
+		.terms-and-condition
+		{
+			margin-top: 15px;
+			padding: 30px 30px 5px 30px;
+			font-family: $display-text;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			.text
+			{
+				font-size: 15px;
+				color: #737373;
+				flex-basis: 500px;
+				text-align: center;
+
+				a
+				{
+					@include transition(0.3s);
+					text-decoration: none;
+					color: #ff3503;
+					font-weight: $reg;
+
+					&:hover
+					{
+						opacity: 0.8;
+					}
+				}
+			}
+		}
+
+		.button-container
+		{
+			margin: 20px 10px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			.btn-register
+			{
+				@include transition(0.3s);
+				font-family: $display-text;
+				border-radius: 0;
+				width: 100%;
+				background-color: #ff3503;
+				color: #fff;
+				padding: 13px 0;
+				font-size: 15px;
+				flex-basis: 500px;
+
+				&:hover
+				{
+					background-color: inherit;
+					color: #ff3503;
+					border: 1px solid #ff3503;
+				}
+			}
+		}
+
+
+		.register-footer
+		{
+			text-align: center;
+			margin: 50px 0;
+
+			.text
+			{
+				font-family: $display-text;
+				font-weight: $reg;
+				color: #454545;
+				font-size: 13px;
+			}
+		}
+	}
+}

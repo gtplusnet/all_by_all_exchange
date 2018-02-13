@@ -1,0 +1,297 @@
+$display-text: 'Noto Sans', sans-serif;
+$content-text: 'Rubik', sans-serif;
+$reg: 400;
+$bold: 700;
+
+@mixin transition($transition) 
+{
+    -webkit-transition: all $transition ease-in-out;
+    -moz-transition: all $transition ease-in-out;
+    -o-transition: all $transition ease-in-out;
+    transition: all $transition ease-in-out;
+}
+
+.content
+{
+	font-family: $display-text;
+	
+	.bottom-nav
+	{
+		background-color: #fd6537;
+
+		.text-header
+		{
+			padding: 25px 0;
+			color: #fff;
+			font-size: 22px;
+			font-weight: $reg;
+
+			@media screen and (max-width: 500px)
+			{
+				text-align: right;
+			}
+
+			span 
+			{
+				padding-left: 10px;
+				font-size: 12px;
+				color: rgba(255,255,255,0.8)
+			}
+		}
+	}
+
+	.holder
+	{
+		background-color: #FFF;
+		margin-top: 25px;
+
+		.top
+		{
+			display: flex;
+			border-bottom: 1px solid rgba(0,0,0,0.2);
+			padding: 10px 5px;
+			align-items: center;
+			margin-right: 10px;
+			margin-left: 10px;
+			margin-top: 10px;
+
+			.holder-title
+			{
+				flex-grow: 1;
+				font-weight: $bold;
+
+				nav
+				{
+					a
+					{
+						text-decoration: none;
+					}
+					
+					span
+					{
+						padding: 0 10px;
+					}
+
+					.tab-link
+					{
+						@include transition(0.2s);
+						
+						&:hover
+						{
+							border-bottom: 2px solid #ff3503;
+							padding-bottom: 15px;
+						}
+					}
+
+					.history
+					{
+						color: #454545;
+					}
+
+					.request
+					{
+						color: #a4a4a4;
+					}
+				}
+
+			}
+
+			.button-holder
+			{
+				flex-grow: 1;
+				text-align: right;
+				
+				.btn-wall-add
+				{
+					@include transition(0.3s);
+					text-decoration: none;
+					border-radius: 0;
+					border: 1px solid #fd6537;
+					background-color: inherit;
+					color: #fd6537;
+					font-family: $display-text;
+					font-size: 13px;
+					font-weight: $bold;
+
+					&:hover
+					{
+						border: 1px solid #ff3503;
+						color: #ff3503;
+					}
+				}
+
+				.btn-convert
+				{
+					@extend .btn-wall-add;
+				}
+			}
+
+			.btn-down-history
+			{
+				@include transition(0.3s);
+				font-family: $display-text;
+				color: #fd6537;
+				font-size: 13px;
+				font-weight: $bold;
+
+				&:hover
+				{
+					color: #ff3503;
+				}
+			}
+		}
+
+		.bottom
+		{
+			padding: 60px 15px;
+
+			.left
+			{
+				text-align: center;
+				vertical-align: middle;
+
+				.text-price
+				{
+					font-family: $content-text;
+					font-size: 40px;
+					font-weight: 400;
+					color: #ff3503;
+
+					@media screen and (max-width: 500px)
+					{
+						font-size: 25px;
+					}
+				}
+			}
+
+			.right
+			{
+				.btn-container	
+				{
+					display: block;
+
+					.btn-request
+					{
+						@include transition(0.3s);
+						border-radius: 0;
+						background-color: #fd6537;
+						color: #fff;
+						margin-right: 15px;
+
+						img
+						{
+							border-right: 1px solid #fff;
+							padding: 3px 5px;
+						}
+
+						&:hover
+						{
+							background-color: #ff3503;
+						}
+					}
+
+					.btn-send
+					{
+						margin-top: 10px;
+						@extend .btn-request;
+						
+						&:hover
+						{
+							background-color: #ff3503;
+						}
+					}
+
+					@media screen and (max-width: 500px)
+					{
+						padding-top: 15px;
+
+						.btn-request
+						{
+							width: 100%;
+						}
+
+						.btn-send
+						{
+							width: 100%;
+						}
+					}
+				}
+
+			}
+
+			.all-wallets
+			{
+				text-align: center;
+				cursor: pointer;
+				padding-bottom: 50px;
+				padding-top: 10px;
+				
+				.php
+				{
+					color: #454545;
+				}
+
+				.btc
+				{
+					color: #a4a4a4;
+				}
+
+				.converted-price
+				{
+					font-family: $content-text;
+					font-weight: 400;
+					font-size: 30px;
+				}
+
+				.currency
+				{
+					font-family: $display-text;
+					font-weight: $bold;
+					font-size: 15px;
+					color: #ff3503;
+				}
+
+				&:hover
+				{
+					border-bottom: 2px solid #ff3503;
+				}
+			}
+
+			.icon-holder
+			{
+				text-align: center;
+				margin-top: 10px;
+			}
+
+			.label-container
+			{
+				text-align: center;
+				font-family: $display-text;
+				font-weight: $reg;
+
+				.label1
+				{
+					font-size: 15px;
+					color: #454545;
+					padding-top: 10px;
+				}
+
+				.label2
+				{
+					font-size: 11px;
+					color: #a4a4a4;
+					padding-top: 10px;
+				}
+			}
+
+			.explaination
+			{
+				font-family: $display-text;
+				color: #454545;
+				font-size: 15px;
+				text-align: center;
+				font-weight: $reg;
+			}
+		}
+	}
+}

@@ -11,6 +11,15 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get('/', 					'MainController@index');
+Route::any('/login', 				'LoginController@login');
+Route::any('/registration', 		'RegistrationController@registration');
+Route::any('/success', 		    	'RegistrationController@thank_you');
+Route::any('/dashboard', 			'MainController@dashboard');
+Route::any('/cash_in', 				'MainController@cash_in');
+Route::any('/cash_out', 			'MainController@cash_out');
+Route::any('/notification', 		'MainController@notification');

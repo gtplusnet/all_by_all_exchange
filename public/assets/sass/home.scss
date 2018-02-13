@@ -1,0 +1,96 @@
+$display-text: 'Noto Sans', sans-serif;
+$reg: 400;
+$bold: 700;
+
+@mixin transition($transition) 
+{
+    -webkit-transition: all $transition ease-in-out;
+    -moz-transition: all $transition ease-in-out;
+    -o-transition: all $transition ease-in-out;
+    transition: all $transition ease-in-out;
+}
+
+.full-screen
+{
+	background-color: #FFF;
+	position: relative;
+	height: 100vh;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: -webkit-flex;
+	/* Safari */
+	-webkit-align-items: center;
+	/* Safari 7.0+ */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	.login-holder
+	{
+		
+		.logo-holder
+		{
+			text-align: center;
+		}
+
+		.buttons
+		{
+			.button-container
+			{
+				margin-top: 25px;
+
+				.btn-login
+				{
+					@include transition(0.3s);
+					font-family: $display-text;
+					border-radius: 0;
+					width: 100%;
+					background-color: #ff3503;
+					color: #fff;
+					padding: 13px 0;
+					font-size: 15px;
+					
+					&:hover
+					{
+						background-color: inherit;
+						color: #ff3503;
+						border: 1px solid #ff3503;
+					}
+
+				}
+
+				.btn-create-account
+				{
+					background-color: inherit;
+					color: #ff3503;
+					border: 1px solid #ff3503;
+					margin-top: 5px;
+					@extend .btn-login;
+
+					&:hover
+					{
+						background-color: #ff3503;
+						color: #fff;
+					}
+				}
+			}
+		}
+
+		.landing-footer
+		{
+			text-align: center;
+			margin: 50px 0;
+			padding: 0 25px;
+
+			.text
+			{
+				font-family: $display-text;
+				font-weight: $reg;
+				color: #454545;
+				font-size: 13px;
+			}
+		}
+	}
+}

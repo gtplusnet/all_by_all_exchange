@@ -10,6 +10,6 @@ class LoginController extends Controller
     public function login()
     {
     	$data['Page'] = "Login";
-    	return view ("front.pages.login", $data);
+    	return view ("front.login", $data);
     }
 }

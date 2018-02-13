@@ -1,0 +1,211 @@
+$display-text: "Noto Sans", sans-serif;
+$content-text: "Rubik", sans-serif;
+$reg: 400;
+$bold: 700;
+
+@mixin transition($transition) 
+{
+    -webkit-transition: all $transition ease-in-out;
+    -moz-transition: all $transition ease-in-out;
+    -o-transition: all $transition ease-in-out;
+    transition: all $transition ease-in-out;
+}
+
+.top-nav 
+{
+    background-color: #ff3503;
+    font-family: $display-text;
+
+    .active 
+    {
+        background-color: #fd6537;
+    }
+
+    .container-fluid 
+    {
+        display: flex;
+        justify-content: flex-start;
+
+        .logo-holder 
+        {
+            flex-grow: 1;
+            padding: 10px 0;
+
+            a 
+            {
+                @media screen and (max-width: 800px) 
+                {
+                    margin-left: 40px;
+                }
+            }
+        }
+
+        .navi 
+        {
+            display: flex;
+            flex-grow: 2;
+
+            .navi-link 
+            {
+                @include transition(0.2s);
+
+                padding: 10px 0;
+
+                a 
+                {
+                    text-decoration: none;
+                    padding-left: 30px;
+                    padding-right: 30px;
+
+                    .nav-text 
+                    {
+                        color: #fff;
+
+                        @media screen and (max-width: 1024px) 
+                        {
+                            display: none;
+                        }
+                    }
+                }
+
+                &:hover 
+                {
+                    cursor: pointer;
+                    background-color: #fd6537;
+                }
+            }
+        }
+
+        .top-right 
+        {
+            display: flex;
+            padding: 10px 0;
+
+            .price-holder 
+            {
+                span 
+                {
+                    color: #fff;
+                }
+
+                @media screen and (max-width: 500px) 
+                {
+                    display: none;
+                }
+            }
+
+            .settings-holder 
+            {
+                margin-left: 70px;
+
+                a 
+                {
+                    text-decoration: none;
+                    color: #fff;
+
+                    img 
+                    {
+                        margin-right: 10px;
+                    }
+
+                    .fa 
+                    {
+                        margin-left: 10px;
+                    }
+                }
+
+                .name 
+                {
+                    color: #fff;
+                }
+
+                //dropdown
+
+                .dropdown 
+                {
+                    position: relative;
+                    display: inline-block;
+                    cursor: pointer;
+                }
+
+                .dropdown-content 
+                {
+                    display: none;
+                    position: absolute;
+                    background-color: #fff;
+                    min-width: 160px;
+                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                    z-index: 1;
+                    right: 1px;
+                    border-radius: 4px;
+
+                    a 
+                    {
+                    	@include transition(0.2s);
+                        color: #454545;
+                        padding: 12px 16px;
+                        text-decoration: none;
+                        display: block;
+                        border-bottom: 1px solid rgba(0,0,0,0.2);
+                        // border-right: 1px solid #ff3503;
+                        // border-left: 1px solid #ff3503;
+
+                        &:hover 
+                        {
+                            background-color: #fd6537;
+                            color: #fff;
+                            // border-left: 1px solid rgba(255,255,255,0.5);
+                            // border-right: 1px solid rgba(255,255,255,0.5);
+                        }
+                    }
+                }
+
+                .dropdown:hover 
+                {
+                    .dropdown-content 
+                    {
+                        display: block;
+                    }
+
+                    .dropbtn 
+                    {
+                        // background-color: #3e8e41;
+                   
+                    }
+                }
+
+                @media screen and (max-width: 1024px) 
+                {
+                    a 
+                    {
+                        .fa 
+                        {
+                            margin-left: 8px;
+                        }
+                    }
+
+                    // .name
+                    // {
+                    // 	display: none;
+                    // }
+                }
+            }
+        }
+
+        @media screen and (max-width: 800px) 
+        {
+            .navi 
+            {
+                display: none;
+            }
+
+            .top-right 
+            {
+                .settings-holder 
+                {
+                    display: none;
+                }
+            }
+        }
+    }
+}
