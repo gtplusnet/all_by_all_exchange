@@ -1,19 +1,21 @@
 @extends("front.layout")
 @section("member_content")
 	<div class="content">
-		<div class="full-screen" style="background-image: url('/assets/img/login-cover.png')">
+		<div class="full-screen d-flex flex-column align-items-center justify-content-center" style="background-image: url('/assets/img/login-cover2.jpg')">
+
 			<div class="login-holder">
-				
+
 				<div class="logo-holder">
-					<img src="/assets/img/anyland-logo.jpg" alt="">
+					{{-- <img src="/assets/img/anyland-logo.jpg" alt=""> --}}
+		            <img src="/assets/img/allbyall-logo.png" alt="" width="200">
 				</div>
 				
-				<div class="buttons">
+				<div class="buttons mt-5">
 					<div class="button-container">
-						<button onclick="location.href='/login'" class="btn btn-login" type="submit">LOGIN</button>
+						<button onclick="location.href='/member/login'" class="btn btn-login" type="submit">LOGIN</button>
 					</div>
 					<div class="button-container">
-						<button onclick="location.href='/registration'" class="btn btn-create-account" type="submit">CREATE AN ACCOUNT</button>
+						<button onclick="location.href='/member/register'" class="btn btn-create-account" type="submit">CREATE AN ACCOUNT</button>
 					</div>
 				</div>
 				

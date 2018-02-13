@@ -3,40 +3,43 @@
 
 <!--Dashboard Navigation-->
 <nav class="top-nav">
-	<div class="container-fluid">
+	<div class="container-fluid ">
+
 		<div class="logo-holder">
 			<div id="nav_list" onclick="on()"><i class="fa fa-bars hamburger"></i></div>
 			<a href="/">
 				<img src="/assets/img/logo.png" alt="">
 			</a>
 		</div>
+
 		<nav class="navi">
-			<span class="navi-link {{ Request::segment(1) == "dashboard" ? "active" : "" }}">
-				<a href="/dashboard">
+			<span class="navi-link {{ Request::segment(2) == "dashboard" ? "active" : "" }}">
+				<a href="/member/dashboard">
 					<img src="/assets/img/my-wallet-icon.png" alt=""> 
 					<span class="nav-text"> My Wallet</span>
 				</a>
 			</span>
-			<span class="navi-link {{ Request::segment(1) == "cash_in" ? "active" : "" }}">
-				<a href="/cash_in">
+			<span class="navi-link {{ Request::segment(2) == "cash_in" ? "active" : "" }}">
+				<a href="/member/cash_in">
 					<img src="/assets/img/cash-in-icon.png" alt=""> 
 					<span class="nav-text"> Cash In</span>
 				</a>
 			</span>
-			<span class="navi-link {{ Request::segment(1) == "cash_out" ? "active" : "" }}">
-				<a href="/cash_out">
+			<span class="navi-link {{ Request::segment(2) == "cash_out" ? "active" : "" }}">
+				<a href="/member/cash_out">
 					<img src="/assets/img/cash-out-icon.png" alt=""> 
 					<span class="nav-text">Cash Out</span>
 				</a>
 			</span>
 
-			<span class="navi-link {{ Request::segment(1) == "notification" ? "active" : "" }}">
-				<a href="/notification">
+			<span class="navi-link {{ Request::segment(2) == "notification" ? "active" : "" }}">
+				<a href="/member/notification">
 					<img src="/assets/img/notif-icon.png" alt=""> 
 					<span class="nav-text"> Notification</span>
 				</a>
 			</span>
 		</nav>
+
 		<div class="top-right">
 
 			<div class="price-holder">
@@ -58,6 +61,7 @@
 				</div>
 			</div>
 		</div>
+
 	</div>
 </nav>
 

@@ -18,29 +18,5 @@ class MainController extends Controller
 		$data['Page'] = "User";
     	return view ("front.layout", $data);
     }
-
-    public function dashboard()
-    {
-    	$data["Page"] = "Dashboard";
-    	return view ("front.dashboard", $data);
-    }
-
-    public function cash_in()
-    {
-        $data["Page"] = "Cash In";
-        return view ("front.cash_in", $data);
-    }
-
-    public function cash_out()
-    {
-        $data["Page"] = "Cash Out";
-        return view ("front.cash_out", $data);
-    }
-
-    public function notification()
-    {
-        $data["Page"] = "Notification";
-        return view ("front.notification", $data);
-    }
 }
 

@@ -19,17 +19,9 @@ $bold: 700;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
-	display: -webkit-flex;
-	/* Safari */
-	-webkit-align-items: center;
-	/* Safari 7.0+ */
-	display: flex;
-	align-items: center;
-	justify-content: center;
 
 	.login-holder
 	{
-		
 		.logo-holder
 		{
 			text-align: center;
@@ -47,7 +39,7 @@ $bold: 700;
 					font-family: $display-text;
 					border-radius: 0;
 					width: 100%;
-					background-color: #ff3503;
+					background-color: #daa215;
 					color: #fff;
 					padding: 13px 0;
 					font-size: 15px;
@@ -55,8 +47,8 @@ $bold: 700;
 					&:hover
 					{
 						background-color: inherit;
-						color: #ff3503;
-						border: 1px solid #ff3503;
+						color: #daa215;
+						border: 1px solid #daa215;
 					}
 
 				}
@@ -64,14 +56,14 @@ $bold: 700;
 				.btn-create-account
 				{
 					background-color: inherit;
-					color: #ff3503;
-					border: 1px solid #ff3503;
+					color: #daa215;
+					border: 1px solid #daa215;
 					margin-top: 5px;
 					@extend .btn-login;
 
 					&:hover
 					{
-						background-color: #ff3503;
+						background-color: #daa215;
 						color: #fff;
 					}
 				}
@@ -88,7 +80,7 @@ $bold: 700;
 			{
 				font-family: $display-text;
 				font-weight: $reg;
-				color: #454545;
+				color: #6693b1;
 				font-size: 13px;
 			}
 		}

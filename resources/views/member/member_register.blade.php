@@ -1,11 +1,11 @@
 @extends("front.layout")
 @section("member_content")
 
-<div class="full-screen" style="background-image: url('/assets/img/login-cover.png')">
+<div class="full-screen d-flex flex-column align-items-center justify-content-center" style="background-image: url('/assets/img/login-cover2.jpg')">
 	<div class="login-holder">
 		
 		<div class="logo-holder">
-			<img src="/assets/img/anyland-logo.jpg" alt="">
+			<img src="/assets/img/allbyall-logo.png" alt="" width="200">
 		</div>
 
    		<div class="registration-container">

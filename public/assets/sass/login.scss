@@ -19,17 +19,9 @@ $bold: 700;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
-	display: -webkit-flex;
-	/* Safari */
-	-webkit-align-items: center;
-	/* Safari 7.0+ */
-	display: flex;
-	align-items: center;
-	justify-content: center;
 
 	.login-holder
 	{
-		
 		.logo-holder
 		{
 			text-align: center;
@@ -45,10 +37,11 @@ $bold: 700;
 					{
 						font-family: $display-text;
 						border: none;
-						border-bottom: 1px solid rgba(0,0,0,0.3);
+						border-bottom: 1px solid rgba(255,255,255,0.3);
 						width: 100%;
 						padding: 10px 5px;
-						color: #585858;
+						color: #fff;
+						background-color: inherit;
 						margin-top: 20px;
 						font-size: 15px;
 					}
@@ -56,15 +49,13 @@ $bold: 700;
 
 				.button-container
 				{
-					margin: 20px 10px;
-
 					.btn-login
 					{
 						@include transition(0.3s);
 						font-family: $display-text;
 						border-radius: 0;
 						width: 100%;
-						background-color: #ff3503;
+						background-color: #daa215;
 						color: #fff;
 						padding: 13px 0;
 						font-size: 15px;
@@ -72,8 +63,8 @@ $bold: 700;
 						&:hover
 						{
 							background-color: inherit;
-							color: #ff3503;
-							border: 1px solid #ff3503;
+							color: #daa215;
+							border: 1px solid #daa215;
 						}
 					}
 				}
@@ -84,19 +75,19 @@ $bold: 700;
 		{
 			margin-top: 15px;
 			padding: 30px;
-			background-color: #efefef;
+			background-color: inherit;
 			font-family: $display-text;
 
 			.text
 			{
 				font-size: 15px;
-				color: #737373;
+				color: #fff;
 
 				a
 				{
 					@include transition(0.3s);
 					text-decoration: none;
-					color: #ff3503;
+					color: #daa215;
 					font-weight: $reg;
 
 					&:hover
@@ -116,7 +107,7 @@ $bold: 700;
 			{
 				font-family: $display-text;
 				font-weight: $reg;
-				color: #454545;
+				color: #6693b1;
 				font-size: 13px;
 			}
 		}

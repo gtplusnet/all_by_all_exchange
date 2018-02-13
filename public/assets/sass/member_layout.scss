@@ -13,12 +13,12 @@ $bold: 700;
 
 .top-nav 
 {
-    background-color: #ff3503;
+    background-color: #050F1B;
     font-family: $display-text;
 
     .active 
     {
-        background-color: #fd6537;
+        background-color: #daa215;
     }
 
     .container-fluid 
@@ -71,7 +71,7 @@ $bold: 700;
                 &:hover 
                 {
                     cursor: pointer;
-                    background-color: #fd6537;
+                    background-color: #daa215;
                 }
             }
         }
@@ -96,7 +96,7 @@ $bold: 700;
 
             .settings-holder 
             {
-                margin-left: 70px;
+                margin-left: 40px;
 
                 a 
                 {
@@ -147,8 +147,8 @@ $bold: 700;
                         text-decoration: none;
                         display: block;
                         border-bottom: 1px solid rgba(0,0,0,0.2);
-                        // border-right: 1px solid #ff3503;
-                        // border-left: 1px solid #ff3503;
+                        // border-right: 1px solid #daa215;
+                        // border-left: 1px solid #daa215;
 
                         &:hover 
                         {

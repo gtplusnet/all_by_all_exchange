@@ -15,18 +15,12 @@ use File;
 use Image;      
 use Validator;
 
-class RegistrationController extends Controller
+class MemberRegisterController extends Controller
 {
-    public function registration(Request $request)
+    public function register(Request $request)
     {
       $data['Page'] = "Register";
-      return view ("front.registration", $data);
-    }
-
-    public function thank_you()
-    {
-    	 $data['Page'] = "Thank you!";
-    	 return view ("front.thank_you", $data);
+      return view ("member.member_register", $data);
     }
 }
 
