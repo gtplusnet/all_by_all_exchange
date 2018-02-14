@@ -41,6 +41,11 @@ $bold: 700;
                     margin-left: 40px;
                 }
             }
+
+            @media screen and (max-width: 800px)
+            {
+                display: flex;
+            }
         }
 
         .navi 

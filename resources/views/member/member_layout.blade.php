@@ -3,10 +3,10 @@
 
 <!--Dashboard Navigation-->
 <nav class="top-nav">
-	<div class="container-fluid ">
+	<div class="container-fluid">
 
 		<div class="logo-holder">
-			<div id="nav_list" onclick="on()"><i class="fa fa-bars hamburger"></i></div>
+			<div id="nav_list" onclick="on()"><i style="color: #fff" class="fa fa-bars hamburger"></i></div>
 			<a href="/">
 				<img src="/assets/img/allbyall-logo.png" alt="" width="30">
 				ALL BY ALL INC.

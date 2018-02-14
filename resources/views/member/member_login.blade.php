@@ -1,7 +1,7 @@
 @extends("front.layout")
 @section("member_content")
 
-<div class="full-screen d-flex flex-column align-items-center justify-content-center" style="background-image: url('/assets/img/login-cover2.jpg')">
+<div class="full-screen d-flex flex-column align-items-center justify-content-center" style="background-image: url('/assets/img/login-cover4.jpg')">
 	<div class="login-holder">
 		
 		<div class="logo-holder">
@@ -29,7 +29,7 @@
 		</div>
 
 		<div class="login-footer">
-			<div class="text">All Rights Reserved &copy; 2018 allbyall.com</div>
+			<div class="text">All Rights Reserved &copy; 2018 allbyall-exchange.com</div>
 		</div>
 
 	</div>

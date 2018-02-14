@@ -44,8 +44,8 @@
 	                    <div class="col-xs-12">
 	                        <div class="profile-img"><img src=""></div>
 	                        <div class="text-holder">
-	                            <div class="name-text text-overflow"></div>
-	                            <div class="subtext text-overflow"></div>
+	                            <div class="name-text text-overflow">Lorem Ipsum</div>
+	                            <div class="subtext text-overflow">loremipsum@gmail.com</div>
 	                        </div>
 	                    </div>
 	                </div>
@@ -54,10 +54,10 @@
 	        <div class="space1"></div>
 	        <span>BROWSE</span>
 	        <ul class="links">
-	            <li> <a onclick="off()" href="/dashboard"> MY WALLET</a></li>
-	            <li> <a onclick="off()" href="/cash_in"> CASH IN</a></li>
-	            <li> <a onclick="off()" href="/cash_out"> CASH OUT</a></li>
-	            <li> <a onclick="off()" href="/notification"> NOTIFICATION</a></li>
+	            <li> <a onclick="off()" href="/member/dashboard"> MY WALLET</a></li>
+	            <li> <a onclick="off()" href="/member/cash_in"> CASH IN</a></li>
+	            <li> <a onclick="off()" href="/member/cash_out"> CASH OUT</a></li>
+	            <li> <a onclick="off()" href="/member/notification"> NOTIFICATION</a></li>
 	        </ul>
 	    </nav>
 	</div>

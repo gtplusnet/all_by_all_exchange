@@ -19,7 +19,7 @@ $bold: 700;
     /*this is the nav*/
     // background-color: rgba(2,92,55,0.7);
     //background-color: #025c37;
-    background-color: rgba(255,53,3,0.6);
+    background-color: rgba(218,162,21,0.6);
     text-align: left;
     width: 300px;
     height: 100%;
@@ -232,9 +232,10 @@ $bold: 700;
     @media screen and (max-width: 991px) {
         cursor: pointer;
         display: block;
-        width: 50px;
+        //width: 50px;
         position: absolute;
-        top: 5px;
+        top: 10px;
+        text-decoration: none;
 
         .fa 
         {
