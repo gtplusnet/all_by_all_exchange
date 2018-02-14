@@ -1,4 +1,4 @@
-@extends("front.member_layout")
+@extends("member.member_layout")
 @section("content")
 	<div class="content">
 		<nav class="bottom-nav">
@@ -10,7 +10,7 @@
 			<div class="container">
 				<div class="holder">
 					<div class="head-text row no-gutters clearfix">
-						<div class="col-md-3 col-sm-3 col-xs-3"><div class="text-container t-center t-orange">Method</div></div>
+						<div class="col-md-3 col-sm-3 col-xs-3"><div class="text-container t-center t-yellow">Method</div></div>
 						<div class="col-md-3 col-sm-3 col-xs-3"><div class="text-container t-center">Amount</div></div>
 						<div class="col-md-3 col-sm-3 col-xs-3"><div class="text-container t-center">Recipient</div></div>
 						<div class="col-md-3 col-sm-3 col-xs-3"><div class="text-container t-center">Payment</div></div>
@@ -25,21 +25,21 @@
 							<div class="per-option t-center match-height">
 								<div class="icon-container"><img src="/assets/img/bank-depo.png"></div>
 								<div class="title">BANK DEPOSIT</div>
-								<div class="line-btn-o">CHOOSE</div>
+								<div class="line-btn-y">CHOOSE</div>
 							</div>
 						</div>
 						<div class="col-md-4 col-sm-4 col-xs-4">
 							<div class="per-option t-center match-height">
 								<div class="icon-container"><img src="/assets/img/money-remit.png"></div>
 								<div class="title">MONEY REMITTANCE</div>
-								<div class="line-btn-o">CHOOSE</div>
+								<div class="line-btn-y">CHOOSE</div>
 							</div>
 						</div>
 						<div class="col-md-4 col-sm-4 col-xs-4">
 							<div class="per-option t-center match-height">
 								<div class="icon-container"><img src="/assets/img/gcash.png"></div>
 								<div class="title">VIA GCASH</div>
-								<div class="line-btn-o">CHOOSE</div>
+								<div class="line-btn-y">CHOOSE</div>
 							</div>
 						</div>
 					</div>

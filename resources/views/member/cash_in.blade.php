@@ -1,4 +1,4 @@
-@extends("front.member_layout")
+@extends("member.member_layout")
 @section("content")
 	<div class="content">
 		<nav class="bottom-nav">
@@ -10,7 +10,7 @@
 			<div class="container">
 				<div class="holder">
 					<div class="head-text row no-gutters clearfix">
-						<div class="col-md-4 col-sm-4 col-xs-4"><div class="text-container t-orange">Method</div></div>
+						<div class="col-md-4 col-sm-4 col-xs-4"><div class="text-container t-yellow">Method</div></div>
 						<div class="col-md-4 col-sm-4 col-xs-4"><div class="text-container t-center">Amount</div></div>
 						<div class="col-md-4 col-sm-4 col-xs-4"><div class="text-container t-right">Payment</div></div>
 					</div>
@@ -24,14 +24,14 @@
 							<div class="per-option t-center">
 								<div class="icon-container"><img src="/assets/img/bank-depo.png"></div>
 								<div class="title">BANK DEPOSIT</div>
-								<div class="line-btn-o">CHOOSE</div>
+								<div class="line-btn-y">CHOOSE</div>
 							</div>
 						</div>
 						<div class="col-md-6 col-sm-6 col-xs-6">
 							<div class="per-option t-center">
 								<div class="icon-container"><img src="/assets/img/money-remit.png"></div>
 								<div class="title">MONEY REMITTANCE</div>
-								<div class="line-btn-o">CHOOSE</div>
+								<div class="line-btn-y">CHOOSE</div>
 							</div>
 						</div>
 					</div>

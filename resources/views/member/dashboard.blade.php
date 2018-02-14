@@ -1,4 +1,4 @@
-@extends("front.member_layout")
+@extends("member.member_layout")
 @section("content")
 	<div class="content">
 
@@ -16,25 +16,17 @@
 						<div class="top">
 							<div class="holder-title">PESO WALLET</div>
 							<div class="button-holder">
-								<a class="btn btn-wall-add" href="javascript:"> WALLET ADDRESS {{-- <img src="/assets/img/wall-add.png" alt=""> --}}</a>
+								<a class="btn btn-wall-add" href="javascript:">WALLET ADDRESS <i class="fas fa-qrcode ml-2"></i></a>
 							</div>
 						</div>
-						<div class="bottom">
-							<div class="row clearfix">
-								<div class="col-md-8 col-sm-8">
-									<div class="left">
-										<div class="text-price">PHP 0.00</div>
-									</div>
-								</div>
-								<div class="col-md-4 col-sm-4">
-									<div class="right">
-										<div class="btn-container">
-											<a class="btn btn-request" href=""><img src="/assets/img/request-icon.png" alt=""> <span>REQUEST</span></a>
-										</div>
-										<div class="btn-container">
-											<a class="btn btn-send" href=""><img src="/assets/img/send-icon.png" alt=""> <span style="padding: 0 14px;">SEND</span></a>
-										</div>
-									</div>
+						<div class="bottom d-flex align-items-center justify-content-center">
+							<div class="left text-center">
+								<div class="text-price">PHP 0.00</div>
+							</div>
+							<div class="right">
+								<div class="btn-container d-flex flex-column align-items-center justify-content-center">
+									<a class="btn btn-request" href=""><i class="fas fa-reply-all"></i> <span>|</span> REQUEST</a>
+									<a class="btn btn-send" href=""><i class="far fa-arrow-alt-circle-right"></i> <span>|</span> SEND</a>
 								</div>
 							</div>
 						</div>
@@ -45,7 +37,7 @@
 						<div class="top">
 							<div class="holder-title">BITCOIN WALLET</div>
 							<div class="button-holder">
-								<a class="btn btn-convert" href="javascript:">CONVERT {{-- <img src="/assets/img/convert-icon.png" alt=""> --}}</a>
+								<a class="btn btn-convert" href="javascript:">CONVERT <i class="fas fa-exchange-alt ml-2"></i></a>
 							</div>
 						</div>
 						<div class="bottom">

@@ -1,4 +1,4 @@
-@extends("front.member_layout")
+@extends("member.member_layout")
 @section("content")
 	<div class="content">
 		<nav class="bottom-nav">

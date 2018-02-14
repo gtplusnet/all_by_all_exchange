@@ -60,7 +60,19 @@ $bold: 700;
 				flex-grow: 1;
 				font-weight: $bold;
 			}
+		}
 
+		.bottom
+		{
+			padding: 60px 15px;
+		}
+	}
+
+	//PESO WALLET
+	.peso-wallet
+	{
+		.top
+		{
 			.button-holder
 			{
 				flex-grow: 1;
@@ -80,8 +92,8 @@ $bold: 700;
 
 					&:hover
 					{
-						border: 1px solid #daa215;
-						color: #daa215;
+						background-color: #daa215;
+						color: #fff;
 					}
 				}
 
@@ -92,130 +104,151 @@ $bold: 700;
 			}
 		}
 
+
 		.bottom
 		{
-			padding: 60px 15px;
-		}
-	}
-
-	//PESO WALLET
-	.peso-wallet
-	{
-		.left
-		{
-			text-align: center;
-			vertical-align: middle;
-
-			.text-price
+			@media screen and (max-width: 500px)
 			{
-				font-family: $content-text;
-				font-size: 40px;
-				font-weight: 400;
-				color: #daa215;
+				flex-wrap: wrap;
+			}
 
-				@media screen and (max-width: 500px)
+			.left
+			{
+				flex-basis: 500px;
+				text-align: center;
+
+				.text-price
 				{
-					font-size: 25px;
+					font-family: $content-text;
+					font-size: 40px;
+					font-weight: 400;
+					color: #daa215;
+
+					@media screen and (max-width: 500px)
+					{
+						font-size: 25px;
+					}
 				}
 			}
-		}
 
-		.right
-		{
-			.btn-container	
+			.right
 			{
-				display: block;
+				flex-basis: 500px;
 
-				.btn-request
+				.btn-container	
 				{
-					@include transition(0.3s);
-					border-radius: 0;
-					background-color: #daa215;
-					color: #fff;
-					margin-right: 15px;
-
-					img
-					{
-						border-right: 1px solid #fff;
-						padding: 3px 5px;
-					}
-
-					&:hover
-					{
-						background-color: #daa215;
-					}
-				}
-
-				.btn-send
-				{
-					margin-top: 10px;
-					@extend .btn-request;
-					
-					&:hover
-					{
-						background-color: #daa215;
-					}
-				}
-
-				@media screen and (max-width: 500px)
-				{
-					padding-top: 15px;
-
 					.btn-request
 					{
-						width: 100%;
+						@include transition(0.3s);
+						border-radius: 0;
+						background-color: #daa215;
+						border: 1px solid #daa215;
+						color: #fff;
+						min-width: 130px;
+
+						img
+						{
+							border-right: 1px solid #fff;
+							padding: 3px 5px;
+						}
+
+						&:hover
+						{
+							background-color: inherit;
+							color: #daa215;
+						}
 					}
 
 					.btn-send
 					{
-						width: 100%;
+						margin-top: 10px;
+						@extend .btn-request;
+					}
+
+					@media screen and (max-width: 500px)
+					{
+						.btn-request
+						{
+							width: 100%;
+						}
+
+						.btn-send
+						{
+							width: 100%;
+						}
 					}
 				}
-			}
 
+			}
 		}
 	}
 
 	//BITCOIN WALLET
 	.bitcoin-wallet
 	{
-		.all-wallets
+		.top
 		{
-			text-align: center;
-			cursor: pointer;
-			padding-bottom: 50px;
-			padding-top: 10px;
-			
-			.php
+			.btn-convert
 			{
-				color: #454545;
-			}
-
-			.btc
-			{
-				color: #a4a4a4;
-			}
-
-			.converted-price
-			{
-				font-family: $content-text;
-				font-weight: 400;
-				font-size: 30px;
-			}
-
-			.currency
-			{
-				font-family: $display-text;
-				font-weight: $bold;
-				font-size: 15px;
+				@include transition(0.3s);
+				text-decoration: none;
+				border-radius: 0;
+				border: 1px solid #daa215;
+				background-color: inherit;
 				color: #daa215;
-			}
+				font-family: $display-text;
+				font-size: 13px;
+				font-weight: $bold;
 
-			&:hover
-			{
-				border-bottom: 2px solid #daa215;
+				&:hover
+				{
+					background-color: #daa215;
+					color: #fff;
+				}
 			}
 		}
+
+		.bottom
+		{
+			.all-wallets
+			{
+				text-align: center;
+				cursor: pointer;
+				padding-bottom: 50px;
+				padding-top: 10px;
+				
+				.php
+				{
+					color: #454545;
+				}
+
+				.btc
+				{
+					color: #a4a4a4;
+				}
+
+				.converted-price
+				{
+					font-family: $content-text;
+					font-weight: 400;
+					font-size: 30px;
+				}
+
+				.currency
+				{
+					font-family: $display-text;
+					font-weight: $bold;
+					font-size: 15px;
+					color: #daa215;
+				}
+
+				&:hover
+				{
+					border-bottom: 2px solid #daa215;
+				}
+			}
+		}
+		
 	}
 
 	//GET STARTED

@@ -27,24 +27,26 @@ $bold: 700;
 {
     text-align: right;
 }
-.t-orange
+.t-yellow
 {
-    color: #ff3503 !important;
+    color: #daa215 !important;
 }
-.line-btn-o
+
+.line-btn-y
 {
+    @include transition(0.3s);
     max-width: 125px;
     text-align: center;
     padding: 10px 0;
     background-color: transparent;
-    border: 2px solid #fd6537;
-    color: #fd6537;
+    border: 2px solid #daa215;
+    color: #daa215;
     margin: auto;
     cursor: pointer;
 
     &:hover 
     {
-        background-color: #fd6537;
+        background-color: #daa215;
         color: #fff;
     }
 }
@@ -91,7 +93,6 @@ $bold: 700;
 {
     padding-top: 50px;
 }
-
 
 .content
 {
