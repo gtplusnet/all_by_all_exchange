@@ -167,6 +167,8 @@ $bold: 700;
 
 					@media screen and (max-width: 500px)
 					{
+						margin-top: 10px;
+
 						.btn-request
 						{
 							width: 100%;
@@ -210,12 +212,21 @@ $bold: 700;
 
 		.bottom
 		{
+			margin: -50px;
+			overflow-x: hidden;
+
+			@media screen and (max-width: 500px)
+			{
+				flex-wrap: wrap;
+			}
+
 			.all-wallets
 			{
 				text-align: center;
 				cursor: pointer;
-				padding-bottom: 50px;
-				padding-top: 10px;
+				//adding-bottom: 50px;
+				margin: 50px;
+				border-bottom: 2px solid #fff;
 				
 				.php
 				{
@@ -242,10 +253,10 @@ $bold: 700;
 					color: #daa215;
 				}
 
-				&:hover
-				{
-					border-bottom: 2px solid #daa215;
-				}
+				// &:hover
+				// {
+				// 	border-bottom: 2px solid #daa215;
+				// }
 			}
 		}
 		

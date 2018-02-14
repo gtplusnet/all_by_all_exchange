@@ -40,20 +40,14 @@
 								<a class="btn btn-convert" href="javascript:">CONVERT <i class="fas fa-exchange-alt ml-2"></i></a>
 							</div>
 						</div>
-						<div class="bottom">
-							<div class="row clearfix">
-								<div class="col-md-6 col-sm-6">
-									<div class="all-wallets">
-										<div class="converted-price php">PHP 0.00</div>
-										<div class="currency">PESO</div>
-									</div>
-								</div>
-								<div class="col-md-6 col-sm-6">
-									<div class="all-wallets">
-										<div class="converted-price btc">0.000000</div>
-										<div class="currency">BITCOIN</div>
-									</div>
-								</div>
+						<div class="bottom d-flex align-items-center justify-content-center">
+							<div class="all-wallets">
+								<div class="converted-price php">PHP 0.00</div>
+								<div class="currency">PESO</div>
+							</div>
+							<div class="all-wallets">
+								<div class="converted-price btc">0.000000</div>
+								<div class="currency">BITCOIN</div>
 							</div>
 						</div>
 					</div>
