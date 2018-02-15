@@ -13,7 +13,6 @@
 					<div class="button-container">
 						<button onclick="location.href='/member/login'" class="btn btn-login" type="submit">LOGIN</button>
 					</div>
-					<div class="sample"></div>
 					<div class="button-container">
 						<button onclick="location.href='/member/register'" class="btn btn-create-account" type="submit">CREATE AN ACCOUNT</button>
 					</div>
