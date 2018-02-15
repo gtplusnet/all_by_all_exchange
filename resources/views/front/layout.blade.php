@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" href="/assets/img/allbyall-ico.png" type="image/png"/>
 	<title>Allbyall Exchange</title>
-	
+
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700" rel="stylesheet">
@@ -16,10 +16,10 @@
 	{{-- <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> --}}
 	<script defer src="/assets/fontawesome5/svg-with-js/css/fa-svg-with-js.css"></script>
 	<script defer src="/assets/fontawesome5/svg-with-js/js/fontawesome-all.js"></script>
-	
+
 	<!-- Bootstrap 4-->
     <link href="/assets/bootstrap4/dist/css/bootstrap.min.css" rel="stylesheet">
-	
+
 	<!--External css-->
     <link rel="stylesheet" href="/assets/css/global.css">
     <link rel="stylesheet" href="/assets/css/mobile_nav.css">
@@ -27,7 +27,7 @@
 
 	<!--wow animation-->
     <link rel="stylesheet" href="/assets/wow/css/animate.css">
-	
+
 	@yield("css")
 
 </head>
@@ -60,26 +60,22 @@
 	        </ul>
 	    </nav>
 	</div>
-	
+
 	<div class="blur-me">
-		
+
 	<!--Content-->
 	<div id="scroll-to" class="content clearfix">
 		@yield("member_content")
 	</div>
 
-	@if(Request::segment(1)=="dashboard")
-
+	@if(Request::segment(1)=="member")
 	<footer>
 		<div class="container">
-			<div class="bottom-text">© 2018 anyband.com</div>
+			<div class="bottom-text">© 2018 allbyall-exchange.com</div>
 		</div>
 	</footer>
-
-	</div>
-	@else
-
 	@endif
+	</div>
 
 	<div id="global_modal" class="modal fade" role="dialog" >
         <div class="modal-dialog">
@@ -89,7 +85,7 @@
         </div>
     </div>
     <div class="multiple_global_modal_container"></div>
-    
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="/assets/bootstrap4/dist/js/bootstrap.min.js"></script>
