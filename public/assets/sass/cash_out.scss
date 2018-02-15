@@ -6,7 +6,7 @@ $text-dark: #454545;
 $text-light: #a4a4a4;
 $text-orange: #ff3503;
 
-@mixin transition($transition) 
+@mixin transition($transition)
 {
     -webkit-transition: all $transition ease-in-out;
     -moz-transition: all $transition ease-in-out;
@@ -14,7 +14,7 @@ $text-orange: #ff3503;
     transition: all $transition ease-in-out;
 }
 
-.content 
+.content
 {
 	font-family: $display-text;
 
@@ -34,7 +34,7 @@ $text-orange: #ff3503;
 				text-align: right;
 			}
 
-			span 
+			span
 			{
 				padding-left: 10px;
 				font-size: 12px;
@@ -42,17 +42,19 @@ $text-orange: #ff3503;
 			}
 		}
 	}
-	.content-wrapper 
+	.content-wrapper
 	{
 		padding-top: 50px;
 		min-height: 720px;
 
-		.holder 
+		.holder
 		{
 			max-width: 827px;
 			margin: auto;
-			.head-text 
+			.head-text
 			{
+                width: 90%;
+
 				.text-container
 				{
 					font-size: 22px;
@@ -61,7 +63,7 @@ $text-orange: #ff3503;
 			}
 			.head-text-img
 			{
-				img 
+				img
 				{
 					max-width: 100%;
 				}
@@ -71,7 +73,7 @@ $text-orange: #ff3503;
 				.head-text-img2
 				{
 					text-align: right;
-					img 
+					img
 					{
 						max-width: 100%;
 					}
@@ -84,15 +86,15 @@ $text-orange: #ff3503;
 					color: $text-dark;
 				}
 			}
-			.cash-option 
+			.cash-option
 			{
-				.per-option 
+				.per-option
 				{
 					background-color: #fff;
 					border: 1px solid #e5e5e5;
 					padding: 35px 0;
 
-					.title 
+					.title
 					{
 						padding: 15px 0;
 					}
