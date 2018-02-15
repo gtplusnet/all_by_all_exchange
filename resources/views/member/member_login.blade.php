@@ -25,7 +25,7 @@
     	</div>
 		
 		<div class="no-account">
-			<div class="text">Don't have an account yet? <a href="/register"> Register Here</a></div>
+			<div class="text">Don't have an account yet? <a href="/member/register"> Register Here</a></div>
 		</div>
 
 		<div class="login-footer">

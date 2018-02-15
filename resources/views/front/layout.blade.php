@@ -27,7 +27,6 @@
 
 	<!--wow animation-->
     <link rel="stylesheet" href="/assets/wow/css/animate.css">
-
 	
 	@yield("css")
 

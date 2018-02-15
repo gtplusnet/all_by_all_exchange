@@ -3,7 +3,7 @@ $content-text: 'Rubik', sans-serif;
 $reg: 400;
 $bold: 700;
 
-@mixin transition($transition) 
+@mixin transition($transition)
 {
     -webkit-transition: all $transition ease-in-out;
     -moz-transition: all $transition ease-in-out;
@@ -19,7 +19,7 @@ $bold: 700;
     /*this is the nav*/
     // background-color: rgba(2,92,55,0.7);
     //background-color: #025c37;
-    background-color: rgba(218,162,21,0.6);
+    background-color: rgba(218,162,21,0.8);
     text-align: left;
     width: 300px;
     height: 100%;
@@ -84,12 +84,14 @@ $bold: 700;
                 color: #fff;
                 font-weight: 400;
                 font-size: 16px;
+                text-decoration: none;
             }
 
             .subtext {
                 color: rgba(255, 255, 255, 0.5);
                 font-weight: 300;
                 font-size: 14px;
+                text-decoration: none;
             }
         }
     }
@@ -171,7 +173,7 @@ $bold: 700;
    transition: width 0.3s ease;
 } */
 
-/* .links li a:hover:after 
+/* .links li a:hover:after
 { width: 100%; } */
 
 // .links li:active { background-color: #EDAC0E; }
@@ -213,7 +215,7 @@ $bold: 700;
 .pushmenu-push-toright {
     /* left: 300px; */
     /* @media screen and (max-width: 320px)
-    
+
     {
         left: 246px;
     } */
@@ -237,7 +239,7 @@ $bold: 700;
         top: 10px;
         text-decoration: none;
 
-        .fa 
+        .fa
         {
             display: block;
             color: #fff;

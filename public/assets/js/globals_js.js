@@ -36,7 +36,7 @@ function globals_js()
 		
 		$nav_list.on("click", function() 
 		{
-		    $(this).toggleClass('active');
+		    // $(this).toggleClass('active');
 		   /* $('.pushmenu-push').toggleClass('pushmenu-push-toright');*/
 		    $menuLeft.toggleClass('pushmenu-open');
 		}); 

@@ -4,10 +4,9 @@
 <!--Dashboard Navigation-->
 <nav class="top-nav">
 	<div class="container-fluid">
-
 		<div class="logo-holder">
 			<div id="nav_list" onclick="on()"><i style="color: #fff" class="fa fa-bars hamburger"></i></div>
-			<a href="/">
+			<a href="javascript:">
 				<img src="/assets/img/allbyall-logo.png" alt="" width="30">
 				ALL BY ALL INC.
 			</a>
@@ -16,33 +15,32 @@
 		<nav class="navi">
 			<span class="navi-link {{ Request::segment(2) == "dashboard" ? "active" : "" }}">
 				<a href="/member/dashboard">
-					<img src="/assets/img/my-wallet-icon.png" alt=""> 
+					<img src="/assets/img/my-wallet-icon.png" alt="">
 					<span class="nav-text"> My Wallet</span>
 				</a>
 			</span>
 			<span class="navi-link {{ Request::segment(2) == "cash_in" ? "active" : "" }}">
 				<a href="/member/cash_in">
-					<img src="/assets/img/cash-in-icon.png" alt=""> 
+					<img src="/assets/img/cash-in-icon.png" alt="">
 					<span class="nav-text"> Cash In</span>
 				</a>
 			</span>
 			<span class="navi-link {{ Request::segment(2) == "cash_out" ? "active" : "" }}">
 				<a href="/member/cash_out">
-					<img src="/assets/img/cash-out-icon.png" alt=""> 
+					<img src="/assets/img/cash-out-icon.png" alt="">
 					<span class="nav-text">Cash Out</span>
 				</a>
 			</span>
 
 			<span class="navi-link {{ Request::segment(2) == "notification" ? "active" : "" }}">
 				<a href="/member/notification">
-					<img src="/assets/img/notif-icon.png" alt=""> 
+					<img src="/assets/img/notif-icon.png" alt="">
 					<span class="nav-text"> Notification</span>
 				</a>
 			</span>
 		</nav>
 
 		<div class="top-right">
-
 			<div class="price-holder">
 				<span>Buy: 581,053 PHP</span>
 				<span>|</span>
@@ -52,7 +50,7 @@
 				<div class="dropdown">
 					<a class="dropbtn" href="javascript:">
 						<img src="/assets/img/user-icon.png" alt="">
-						<span class="name">Sample user </span> 
+						<span class="name">Sample user </span>
 						<i class="fa fa-angle-down" aria-hidden="true"></i>
 					</a>
 					<div class="dropdown-content">
@@ -62,7 +60,6 @@
 				</div>
 			</div>
 		</div>
-
 	</div>
 </nav>
 

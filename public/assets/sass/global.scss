@@ -1,8 +1,7 @@
 $display-text: 'Noto Sans', sans-serif;
 $reg: 400;
 $bold: 700;
-
-@mixin transition($transition) 
+@mixin transition($transition)
 {
     -webkit-transition: all $transition ease-in-out;
     -moz-transition: all $transition ease-in-out;
@@ -10,23 +9,25 @@ $bold: 700;
     transition: all $transition ease-in-out;
 }
 
-.row-no-padding 
+.row-no-padding
 {
-	> div
-	{
-		padding-left: 0;
-		padding-right: 0;
-	}
+    > div
+    {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 .t-center
 {
     text-align: center;
 }
+
 .t-right
 {
     text-align: right;
 }
+
 .t-yellow
 {
     color: #daa215 !important;
@@ -44,87 +45,47 @@ $bold: 700;
     margin: auto;
     cursor: pointer;
 
-    &:hover 
+    &:hover
     {
         background-color: #daa215;
         color: #fff;
     }
 }
-.p-sm 
+
+.p-sm
 {
     font-size: 11px;
     color: #a4a4a4;
 }
 
-/* PADDINGS */
-.pt-10
-{
-    padding-top: 10px;
-}
-.pt-15
-{
-    padding-top: 15px;
-}
-.pt-20
-{
-    padding-top: 20px;
-}
-.pt-25
-{
-    padding-top: 25px;
-}
-.pt-30
-{
-    padding-top: 30px;
-}
-.pt-35
-{
-    padding-top: 35px;
-}
-.pt-40
-{
-    padding-top: 40px;
-}
-.pt-45
-{
-    padding-top: 45px;
-}
-.pt-50
-{
-    padding-top: 50px;
-}
-
 .content
 {
-	background-color: #f3f3f3;
-	padding-bottom: 20px;
+    background-color: #f3f3f3;
+    padding-bottom: 20px;
 }
 
 header
-{
-	
-}
+{}
 
 footer
 {
-	background-color: #fff;
-	padding: 25px 0;
-	text-align: center;
+    background-color: #fff;
+    padding: 25px 0;
+    text-align: center;
 
-	.bottom-text
-	{
-		color: #a4a4a4;
-		font-family: $display-text;
-		font-weight: $reg;
-		font-size: 13px;
-	}
+    .bottom-text
+    {
+        color: #a4a4a4;
+        font-family: $display-text;
+        font-weight: $reg;
+        font-size: 13px;
+    }
 }
-
 /* SCROLL TO TOP */
 
-.scroll-up 
+.scroll-up
 {
-    padding: 15px 15px 18px 15px;
+    padding: 15px 15px 18px;
     position: fixed;
     bottom: 100px;
     right: 20px;
@@ -132,26 +93,23 @@ footer
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 888;
 
-    &:hover 
+    &:hover
     {
         cursor: pointer;
     }
-
-    @media screen and (max-width: 900px) 
+    @media screen and (max-width: 900px)
     {
-        right: 0px;
+        right: 0;
         bottom: 58px;
     }
-
-    @media screen and (max-width: 600px) 
+    @media screen and (max-width: 600px)
     {
-        right: 0px;
+        right: 0;
         bottom: 58px;
     }
-
-    @media screen and (max-width: 360px) 
+    @media screen and (max-width: 360px)
     {
-        right: 0px;
+        right: 0;
         bottom: 58px;
     }
 }
