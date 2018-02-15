@@ -4,7 +4,6 @@
 		<div class="full-screen d-flex flex-column align-items-center justify-content-center" style="background-image: url('/assets/img/login-cover4.jpg')">
 
 			<div class="login-holder">
-
 				<div class="logo-holder">
 					{{-- <img src="/assets/img/anyland-logo.jpg" alt=""> --}}
 		            <img src="/assets/img/allbyall-logo.png" alt="" width="200">
@@ -22,7 +21,6 @@
 				<div class="landing-footer">
 					<div class="text">All Rights Reserved &copy; 2018 allbyall-exchange.com</div>
 				</div>
-
 			</div>
 		</div>
 	</div>

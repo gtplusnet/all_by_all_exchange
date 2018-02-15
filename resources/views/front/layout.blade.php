@@ -62,7 +62,7 @@
 	</div>
 
 	<div class="blur-me">
-
+		
 	<!--Content-->
 	<div id="scroll-to" class="content clearfix">
 		@yield("member_content")
