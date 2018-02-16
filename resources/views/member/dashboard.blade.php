@@ -57,7 +57,7 @@
 				<div class="col-md-12">
 					<div class="holder get-started">
 						<div class="top">
-							<div class="holder-title">GET STARTED WITH ANY BAND</div>
+							<div class="holder-title">GET STARTED WITH ALLBYALL EXCHANGE</div>
 						</div>
 						<div class="bottom">
 							<div class="row clearfix">
