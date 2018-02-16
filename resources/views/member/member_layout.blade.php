@@ -8,7 +8,7 @@
 			<div id="nav_list" onclick="on()"><i style="color: #fff" class="fa fa-bars hamburger"></i></div>
 			<a href="javascript:">
 				<img src="/assets/img/allbyall-logo.png" alt="" width="30">
-				ALL BY ALL INC.
+				ALL BY ALL EXCHANGE
 			</a>
 		</div>
 
