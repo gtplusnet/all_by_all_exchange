@@ -22,9 +22,13 @@
 					<div><div class="text-container">Payment</div></div>
 				</div>
 				<div class="head-text-img t-center"><img src="/assets/img/c2-step1.png"></div>
-				<div class="head-text-2 row no-gutters clearfix mt-4">
+				{{-- <div class="head-text-2 row no-gutters clearfix mt-4">
 					<div class="col-md-3 col-sm-3 col-xs-3"><div class="head-text-img2"><img src="/assets/img/cashout-vector.png"></div></div>
 					<div class="col-md-9 col-sm-9 col-xs-9"><div class="text-container">How should we send the money?</div></div>
+				</div> --}}
+				<div class="head-text-2 d-flex align-items-center justify-content-center mt-4">
+					<div class="head-text-img2"><img src="/assets/img/cashout-vector.png"></div>
+					<div class="text-container">How should we send the money?</div>
 				</div>
 				<div class="cash-option row clearfix mt-5">
 					<div class="col-md-4 col-sm-4 col-xs-4">

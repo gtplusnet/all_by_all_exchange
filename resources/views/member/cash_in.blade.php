@@ -15,14 +15,18 @@
 					<div class="col-md-4 col-sm-4 col-xs-4"><div class="text-container t-right">Payment</div></div>
 				</div> --}}
 				<div class="head-text d-flex justify-content-between m-auto">
-					<div><div class="text-container t-yellow">Method</div></div>
-					<div><div class="text-container">Amount</div></div>
-					<div><div class="text-container">Payment</div></div>
+					<div class="text-container t-yellow">Method</div>
+					<div class="text-container">Amount</div>
+					<div class="text-container">Payment</div>
 				</div>
 				<div class="head-text-img t-center"><img src="/assets/img/c-step1.png"></div>
-				<div class="head-text-2 row no-gutters clearfix mt-4">
+				{{-- <div class="head-text-2 row no-gutters clearfix mt-4">
 					<div class="col-md-3 col-sm-3 col-xs-3"><div class="head-text-img2"><img src="/assets/img/cashin-vector.png"></div></div>
 					<div class="col-md-9 col-sm-9 col-xs-9"><div class="text-container">How would you like to Cash-In?</div></div>
+				</div> --}}
+				<div class="head-text-2 d-flex align-items-center justify-content-between mt-4">
+					<div class="head-text-img2"><img src="/assets/img/cashin-vector.png"></div>
+					<div class="text-container">How would you like to Cash-In?</div>
 				</div>
 				<div class="cash-option mt-3 row clearfix">
 					<div class="col-md-6 col-sm-6 col-xs-6">
@@ -53,5 +57,5 @@
 @endsection
 
 @section("script")
-	
+
 @endsection

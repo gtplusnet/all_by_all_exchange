@@ -57,7 +57,8 @@ $text-orange: #ff3503;
 
 				.text-container
 				{
-					font-size: 22px;
+					font-size: 1.375rem; //22px;
+                    //font-size: 2vw;
 					color: $text-light;
 				}
 			}
@@ -72,7 +73,6 @@ $text-orange: #ff3503;
 			{
 				.head-text-img2
 				{
-					text-align: right;
 					img
 					{
 						max-width: 100%;
@@ -80,7 +80,6 @@ $text-orange: #ff3503;
 				}
 				.text-container
 				{
-					padding-top: 50px;
 					padding-left: 20px;
 					font-size: 22px;
 					color: $text-dark;
