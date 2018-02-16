@@ -1,13 +1,11 @@
 @extends("member.member_layout")
 @section("content")
 	<div class="content">
-
 		<nav class="bottom-nav">
 			<div class="container-fluid">
 				<div class="text-header">My Wallet <span>You can send a payment request to anyone with a phone number, email address, or to your Facebook friends.  </span></div>
 			</div>
 		</nav>
-
 		<div class="container">
 			<!--PESO AND WALLET-->
 			<div class="row clearfix">
@@ -104,7 +102,7 @@
 					</div>
 				</div>
 			</div>
-			
+
 			<!--HISTORY AND REQUEST-->
 			<div class="row clearfix">
 				<div class="col-md-12">
@@ -132,7 +130,6 @@
 					</div>
 				</div>
 			</div>
-
 		</div>
 	</div>
 @endsection
