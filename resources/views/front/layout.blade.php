@@ -62,19 +62,18 @@
 	</div>
 
 	<div class="blur-me">
-		
-	<!--Content-->
-	<div id="scroll-to" class="content clearfix">
-		@yield("member_content")
-	</div>
-
-	@if(Request::segment(1)=="member")
-	<footer>
-		<div class="container">
-			<div class="bottom-text">© 2018 allbyall-exchange.com</div>
+		<!--Content-->
+		<div id="scroll-to" class="content clearfix">
+			@yield("member_content")
 		</div>
-	</footer>
-	@endif
+
+		@if(Request::segment(1)=="member")
+		<footer>
+			<div class="container">
+				<div class="bottom-text">© 2018 allbyall-exchange.com</div>
+			</div>
+		</footer>
+		@endif
 	</div>
 
 	<div id="global_modal" class="modal fade" role="dialog" >
