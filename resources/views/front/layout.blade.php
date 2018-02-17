@@ -41,7 +41,7 @@
 	            <div class="profile-img-container">
 	                <div class="row-no-padding clearfix">
 	                    <div class="col-xs-12">
-	                        <div class="profile-img"><img src=""></div>
+	                        <div class="profile-img"><img src="/assets/img/profile.jpg"></div>
 	                        <div class="text-holder">
 	                            <div class="name-text text-overflow">Lorem Ipsum</div>
 	                            <div class="subtext text-overflow">loremipsum@gmail.com</div>
@@ -53,10 +53,10 @@
 	        <div class="space1"></div>
 	        <span>BROWSE</span>
 	        <ul class="links">
-	            <li> <a onclick="off()" href="/member/dashboard"> MY WALLET</a></li>
-	            <li> <a onclick="off()" href="/member/cash_in"> CASH IN</a></li>
-	            <li> <a onclick="off()" href="/member/cash_out"> CASH OUT</a></li>
-	            <li> <a onclick="off()" href="/member/notification"> NOTIFICATION</a></li>
+	            <li> <a onclick="off()" href="/member/dashboard"><img src="/assets/img/wallet.png" alt=""> MY WALLET</a></li>
+	            <li> <a onclick="off()" href="/member/cash_in"><img src="/assets/img/mob-cashin.png" alt=""> CASH IN</a></li>
+	            <li> <a onclick="off()" href="/member/cash_out"><img src="/assets/img/money.png" alt=""> CASH OUT</a></li>
+	            <li> <a onclick="off()" href="/member/notification"><img src="/assets/img/envelope.png" alt=""> NOTIFICATION</a></li>
 	        </ul>
 	    </nav>
 	</div>
