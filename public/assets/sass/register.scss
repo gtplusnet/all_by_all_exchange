@@ -2,7 +2,7 @@ $display-text: 'Noto Sans', sans-serif;
 $reg: 400;
 $bold: 700;
 
-@mixin transition($transition) 
+@mixin transition($transition)
 {
     -webkit-transition: all $transition ease-in-out;
     -moz-transition: all $transition ease-in-out;
@@ -22,7 +22,7 @@ $bold: 700;
 
 	.login-holder
 	{
-		
+
 		.logo-holder
 		{
 			text-align: center;
@@ -36,7 +36,7 @@ $bold: 700;
 				{
 					@media screen and (max-width: 500px)
 					{
-						
+
 					}
 				}
 
@@ -45,32 +45,45 @@ $bold: 700;
 					display: flex;
 					align-items: center;
 					justify-content: center;
+                    width: 50%;
+                    margin: auto;
 
-					.left
-					{
-						flex-basis: 500px;
-					}
-
-					.right
-					{
-						flex-basis: 500px;
-					}
-
-					@media screen and (max-width: 500px)
-					{
-						//flex-wrap: wrap;
-					}
-				}
-
-				.bottom
-				{
-					
+					// .left
+					// {
+					// 	flex-basis: 500px;
+					// }
+                    //
+					// .right
+					// {
+					// 	flex-basis: 500px;
+					// }
+                    //
+					// @media screen and (max-width: 500px)
+					// {
+					// 	//flex-wrap: wrap;
+					// }
 				}
 
 				.form-group
 				{
 					margin: 10px;
 
+					input
+					{
+						font-family: $display-text;
+						border: none;
+						border-bottom: 1px solid rgba(255,255,255,0.3);
+						width: 100%;
+						padding: 10px 15px;
+						background-color: inherit;
+						color: #fff;
+						margin-top: 20px;
+						font-size: 15px;
+					}
+				}
+
+                .form-row
+				{
 					input
 					{
 						font-family: $display-text;

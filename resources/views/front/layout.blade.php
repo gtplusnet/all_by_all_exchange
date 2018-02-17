@@ -67,7 +67,9 @@
 			@yield("member_content")
 		</div>
 
-		@if(Request::segment(1)=="member")
+		@if(Request::segment(2)=="login")
+		@elseif(Request::segment(2)=="register")
+		@elseif (Request::segment(1)=="member")
 		<footer>
 			<div class="container">
 				<div class="bottom-text">© 2018 allbyall-exchange.com</div>

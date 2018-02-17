@@ -7,7 +7,8 @@
 			<img src="/assets/img/allbyall-logo.png" alt="" width="200">
 		</div>
    		<div class="registration-container">
-   			<form method="post" action="/member/dashboard">
+
+   			{{-- <form method="post" action="/member/dashboard">
     			{{csrf_field()}}
                 <div class="flex-me">
                     <div class="left">
@@ -33,7 +34,39 @@
                         <button class="btn btn-register" type="submit">REGISTER</button>
                     </div>
                 </div>
-    		</form>
+    		</form> --}}
+
+			<form method="post" action="/member/dashboard" class="mt-4">
+				{{csrf_field()}}
+				<div class="flex-me form-row">
+					<div class="col-lg-6">
+						<input type="text" class="form-control my-2" placeholder="First Name">
+					</div>
+					<div class="col-lg-6">
+						<input type="text" class="form-control my-2" placeholder="Last Name">
+					</div>
+					<div class="col-lg-6">
+						<input type="text" class="form-control my-2" placeholder="Email Address">
+					</div>
+					<div class="col-lg-6">
+						<input type="text" class="form-control my-2" placeholder="Phone Number">
+					</div>
+					<div class="col-lg-6">
+						<input type="text" class="form-control my-2" placeholder="Password">
+					</div>
+					<div class="col-lg-6">
+						<input type="text" class="form-control my-2" placeholder="Repeat Password">
+					</div>
+					<div class="bottom">
+	                    <div class="terms-and-condition">
+	                        <div class="text">Signing up implies you agree to our <a href="javascript:"> Terms of Use</a></div>
+	                    </div>
+	                    <div class="button-container">
+	                        <button class="btn btn-register" type="submit">REGISTER</button>
+	                    </div>
+	                </div>
+				</div>
+			</form>
     	</div>
 		<div class="register-footer">
 			<div class="text">All Rights Reserved &copy; 2018 allbyall-exchange.com</div>
