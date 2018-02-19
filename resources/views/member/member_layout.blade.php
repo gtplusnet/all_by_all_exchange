@@ -2,7 +2,7 @@
 @section("member_content")
 
 <!--Dashboard Navigation-->
-<nav class="top-nav">
+<nav class="top-nav sticky-top">
 	<div class="container-fluid">
 		<div class="logo-holder">
 			<div id="nav_list" onclick="on()"><i style="color: #fff" class="fa fa-bars hamburger"></i></div>
