@@ -11,7 +11,6 @@
 				ALL BY ALL EXCHANGE
 			</a>
 		</div>
-
 		<nav class="navi">
 			<span class="navi-link {{ Request::segment(2) == "dashboard" ? "active" : "" }}">
 				<a href="/member/dashboard">
@@ -31,7 +30,6 @@
 					<span class="nav-text">Cash Out</span>
 				</a>
 			</span>
-
 			<span class="navi-link {{ Request::segment(2) == "notification" ? "active" : "" }}">
 				<a href="/member/notification">
 					<img src="/assets/img/notif-icon.png" alt="">
@@ -39,7 +37,6 @@
 				</a>
 			</span>
 		</nav>
-
 		<div class="top-right">
 			<div class="price-holder">
 				<span>Buy: 581,053 PHP</span>

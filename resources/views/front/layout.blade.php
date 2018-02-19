@@ -58,6 +58,7 @@
 	            <li> <a onclick="off()" href="/member/cash_in"><img src="/assets/img/mob-cashin.png" alt=""> CASH IN</a></li>
 	            <li> <a onclick="off()" href="/member/cash_out"><img src="/assets/img/money.png" alt=""> CASH OUT</a></li>
 	            <li> <a onclick="off()" href="/member/notification"><img src="/assets/img/envelope.png" alt=""> NOTIFICATION</a></li>
+				<li> <a onclick="off()" href="/member/notification"><i class="fas fa-sign-out-alt"></i> LOGOUT</a></li>
 	        </ul>
 	    </nav>
 	</div>
