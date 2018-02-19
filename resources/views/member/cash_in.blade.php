@@ -28,21 +28,20 @@
 					<div class="head-text-img2"><img src="/assets/img/cashin-vector.png"></div>
 					<div class="text-container">How would you like to Cash-In?</div>
 				</div>
-				<div class="cash-option mt-3 row clearfix">
-					<div class="col-md-6 col-sm-6 col-xs-6">
-						<div class="per-option t-center">
-							<div class="icon-container"><img src="/assets/img/bank-depo.png"></div>
-							<div class="title">BANK DEPOSIT</div>
-							<div class="line-btn-y">CHOOSE</div>
-						</div>
+				{{-- <div class="cash-option mt-3 row clearfix"> --}}
+				<div class="cash-option d-flex align-items-center justify-content-center">
+					<div class="per-option t-center">
+						<div class="icon-container"><img src="/assets/img/bank-depo.png"></div>
+						<div class="title">BANK DEPOSIT</div>
+						<div class="line-btn-y">CHOOSE</div>
 					</div>
-					<div class="col-md-6 col-sm-6 col-xs-6">
+					{{-- <div class="col-md-6 col-sm-6 col-xs-6">
 						<div class="per-option t-center">
 							<div class="icon-container"><img src="/assets/img/money-remit.png"></div>
 							<div class="title">MONEY REMITTANCE</div>
 							<div class="line-btn-y">CHOOSE</div>
 						</div>
-					</div>
+					</div> --}}
 				</div>
 				<p class="p-sm t-center mt-5">
 					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.

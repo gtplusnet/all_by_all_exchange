@@ -30,15 +30,14 @@
 					<div class="head-text-img2"><img src="/assets/img/cashout-vector.png"></div>
 					<div class="text-container">How should we send the money?</div>
 				</div>
-				<div class="cash-option row clearfix mt-5">
-					<div class="col-md-4 col-sm-4 col-xs-4">
-						<div class="per-option t-center match-height">
-							<div class="icon-container"><img src="/assets/img/bank-depo.png"></div>
-							<div class="title">BANK DEPOSIT</div>
-							<div class="line-btn-y">CHOOSE</div>
-						</div>
+				{{-- <div class="cash-option row clearfix mt-5"> --}}
+				<div class="cash-option d-flex align-items-center justify-content-center mt-4">
+					<div class="per-option t-center">
+						<div class="icon-container"><img src="/assets/img/bank-depo.png"></div>
+						<div class="title">BANK DEPOSIT</div>
+						<div class="line-btn-y">CHOOSE</div>
 					</div>
-					<div class="col-md-4 col-sm-4 col-xs-4">
+					{{-- <div class="col-md-4 col-sm-4 col-xs-4">
 						<div class="per-option t-center match-height">
 							<div class="icon-container"><img src="/assets/img/money-remit.png"></div>
 							<div class="title">MONEY REMITTANCE</div>
@@ -51,7 +50,7 @@
 							<div class="title">VIA GCASH</div>
 							<div class="line-btn-y">CHOOSE</div>
 						</div>
-					</div>
+					</div> --}}
 				</div>
 				<p class="p-sm t-center mt-5">
 					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
