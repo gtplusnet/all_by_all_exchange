@@ -8,6 +8,7 @@
 		</nav>
 		<div class="container">
 			<div class="row clearfix">
+
 				<div class="col-md-4">
 					<!--PESO AND WALLET-->
 					<div class="holder peso-wallet match-height">
@@ -35,6 +36,7 @@
 						</div>
 					</div>
 				</div>
+
 				<div class="col-md-4">
 					{{-- ABA WALLET --}}
 					<div class="holder aba-wallet match-height">
@@ -60,6 +62,7 @@
 						</div>
 					</div>
 				</div>
+
 				<div class="col-md-4">
 					{{-- BITCOIN WALLET --}}
 					<div class="holder bitcoin-wallet match-height">
@@ -165,7 +168,7 @@
 	</div>
 @endsection
 @section("css")
-<link rel="stylesheet" href="/assets/css/dashboard.css">
+<link rel="stylesheet" href="/assets/css/dashboard.css?v=1.0">
 @endsection
 
 @section("script")
