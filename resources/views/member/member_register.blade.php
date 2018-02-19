@@ -7,7 +7,6 @@
 			<img src="/assets/img/allbyall-logo.png" alt="" width="200">
 		</div>
    		<div class="registration-container">
-
    			<form method="post" action="/member/dashboard">
     			{{csrf_field()}}
                 <div class="flex-me">
@@ -67,6 +66,7 @@
 	                </div>
 				</div>
 			</form> --}}
+
     	</div>
 		<div class="register-footer">
 			<div class="text">All Rights Reserved &copy; 2018 allbyall-exchange.com</div>

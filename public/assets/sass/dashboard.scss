@@ -3,7 +3,7 @@ $content-text: 'Rubik', sans-serif;
 $reg: 400;
 $bold: 700;
 
-@mixin transition($transition) 
+@mixin transition($transition)
 {
     -webkit-transition: all $transition ease-in-out;
     -moz-transition: all $transition ease-in-out;
@@ -14,7 +14,7 @@ $bold: 700;
 .content
 {
 	font-family: $display-text;
-	
+
 	.bottom-nav
 	{
 		background-color: #daa215;
@@ -31,7 +31,7 @@ $bold: 700;
 				text-align: right;
 			}
 
-			span 
+			span
 			{
 				padding-left: 10px;
 				font-size: 12px;
@@ -77,7 +77,7 @@ $bold: 700;
 			{
 				flex-grow: 1;
 				text-align: right;
-				
+
 				.btn-wall-add
 				{
 					@include transition(0.3s);
@@ -112,6 +112,65 @@ $bold: 700;
 				flex-wrap: wrap;
 			}
 
+            .text-price
+			{
+				font-family: $content-text;
+				font-size: 30px; //40
+				font-weight: 400;
+				color: #daa215;
+
+				@media screen and (max-width: 500px)
+				{
+					font-size: 25px;
+				}
+			}
+
+            .btn-container
+				{
+					.btn-request
+					{
+						@include transition(0.3s);
+						border-radius: 0;
+						background-color: #daa215;
+						border: 1px solid #daa215;
+						color: #fff;
+						min-width: 130px;
+
+						img
+						{
+							border-right: 1px solid #fff;
+							padding: 3px 5px;
+						}
+
+						&:hover
+						{
+							background-color: inherit;
+							color: #daa215;
+						}
+					}
+
+					.btn-send
+					{
+						margin-top: 10px;
+						@extend .btn-request;
+					}
+
+					@media screen and (max-width: 500px)
+					{
+						margin-top: 10px;
+
+						.btn-request
+						{
+							width: 100%;
+						}
+
+						.btn-send
+						{
+							width: 100%;
+						}
+					}
+				}
+
 			.left
 			{
 				flex-basis: 500px;
@@ -135,7 +194,7 @@ $bold: 700;
 			{
 				flex-basis: 500px;
 
-				.btn-container	
+				.btn-container
 				{
 					.btn-request
 					{
@@ -185,6 +244,90 @@ $bold: 700;
 		}
 	}
 
+
+    //ABA WALLET
+	.aba-wallet
+	{
+		.top
+		{
+			.btn-convert
+			{
+				@include transition(0.3s);
+				text-decoration: none;
+				border-radius: 0;
+				border: 1px solid #daa215;
+				background-color: inherit;
+				color: #daa215;
+				font-family: $display-text;
+				font-size: 13px;
+				font-weight: $bold;
+
+				&:hover
+				{
+					background-color: #daa215;
+					color: #fff;
+				}
+			}
+		}
+
+		.bottom
+		{
+			// margin: -50px;
+			overflow-x: hidden;
+
+			@media screen and (max-width: 500px)
+			{
+				flex-wrap: wrap;
+			}
+
+			.aba-wallets
+			{
+				text-align: center;
+				cursor: pointer;
+				//adding-bottom: 50px;
+				// margin: 50px;
+				border-bottom: 2px solid #fff;
+
+				.aba
+				{
+					color: #454545;
+				}
+
+				.btc
+				{
+					color: #a4a4a4;
+				}
+
+                .php
+                {
+                    @extend .btc;
+                }
+
+				.converted-price
+				{
+					font-family: $content-text;
+					font-weight: 400;
+					font-size: 30px;
+				}
+
+				.currency
+				{
+					font-family: $display-text;
+					font-weight: $bold;
+					font-size: 15px;
+					color: #daa215;
+				}
+
+
+				// &:hover
+				// {
+				// 	border-bottom: 2px solid #daa215;
+				// }
+			}
+		}
+
+	}
+
 	//BITCOIN WALLET
 	.bitcoin-wallet
 	{
@@ -212,7 +355,7 @@ $bold: 700;
 
 		.bottom
 		{
-			margin: -50px;
+			// margin: -50px;
 			overflow-x: hidden;
 
 			@media screen and (max-width: 500px)
@@ -225,17 +368,17 @@ $bold: 700;
 				text-align: center;
 				cursor: pointer;
 				//adding-bottom: 50px;
-				margin: 50px;
+				// margin: 50px;
 				border-bottom: 2px solid #fff;
-				
+
 				.php
 				{
-					color: #454545;
+					color: #a4a4a4;
 				}
 
 				.btc
 				{
-					color: #a4a4a4;
+					color: #454545;
 				}
 
 				.converted-price
@@ -259,7 +402,7 @@ $bold: 700;
 				// }
 			}
 		}
-		
+
 	}
 
 	//GET STARTED
@@ -312,7 +455,7 @@ $bold: 700;
 				{
 					text-decoration: none;
 				}
-				
+
 				span
 				{
 					padding: 0 10px;
@@ -321,7 +464,7 @@ $bold: 700;
 				.tab-link
 				{
 					@include transition(0.2s);
-					
+
 					// &:hover
 					// {
 					// 	border-bottom: 2px solid #daa215;
@@ -329,7 +472,7 @@ $bold: 700;
 					// }
 				}
 			}
-			
+
 			.history
 			{
 				color: #454545;

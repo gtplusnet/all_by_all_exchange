@@ -7,9 +7,9 @@
 			</div>
 		</nav>
 		<div class="container">
-			<!--PESO AND WALLET-->
 			<div class="row clearfix">
-				<div class="col-md-6">
+				<div class="col-md-4">
+					<!--PESO AND WALLET-->
 					<div class="holder peso-wallet match-height">
 						<div class="top">
 							<div class="holder-title">PESO WALLET</div>
@@ -17,8 +17,8 @@
 								<a class="btn btn-wall-add" href="javascript:">WALLET ADDRESS <i class="fas fa-qrcode ml-2"></i></a>
 							</div>
 						</div>
-						<div class="bottom d-flex align-items-center justify-content-center">
-							<div class="left text-center">
+						<div class="bottom d-flex flex-column align-items-center justify-content-center">
+							{{-- <div class="left text-center">
 								<div class="text-price">PHP 0.00</div>
 							</div>
 							<div class="right">
@@ -26,11 +26,42 @@
 									<a class="btn btn-request" href=""><i class="fas fa-reply-all"></i> <span>|</span> REQUEST</a>
 									<a class="btn btn-send" href=""><i class="far fa-arrow-alt-circle-right"></i> <span>|</span> SEND</a>
 								</div>
+							</div> --}}
+							<div class="text-price">PHP 0.00</div>
+							<div class="btn-container mt-3 d-flex flex-column align-items-center justify-content-center">
+								<a class="btn btn-request" href=""><i class="fas fa-reply-all"></i> <span>|</span> REQUEST</a>
+								<a class="btn btn-send" href=""><i class="far fa-arrow-alt-circle-right"></i> <span>|</span> SEND</a>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-4">
+					{{-- ABA WALLET --}}
+					<div class="holder aba-wallet match-height">
+						<div class="top">
+							<div class="holder-title">ABA WALLET</div>
+							<div class="button-holder">
+								<a class="btn btn-convert" href="javascript:">CONVERT <i class="fas fa-exchange-alt ml-2"></i></a>
+							</div>
+						</div>
+						<div class="bottom d-flex flex-column align-items-center justify-content-center">
+							<div class="aba-wallets d-flex flex-column justify-content-center">
+								<div class="converted-price aba">ABA 0.00</div>
+								<div class="currency">CURRENT ABA WALLET</div>
+							</div>
+							<div class="aba-wallets mt-3">
+								<div class="converted-price btc">0.000000</div>
+								<div class="currency">BITCOIN</div>
+							</div>
+							<div class="aba-wallets">
+								<div class="converted-price php">PHP 0.00</div>
+								<div class="currency">PESO</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					{{-- BITCOIN WALLET --}}
 					<div class="holder bitcoin-wallet match-height">
 						<div class="top">
 							<div class="holder-title">BITCOIN WALLET</div>
@@ -38,14 +69,14 @@
 								<a class="btn btn-convert" href="javascript:">CONVERT <i class="fas fa-exchange-alt ml-2"></i></a>
 							</div>
 						</div>
-						<div class="bottom d-flex align-items-center justify-content-center">
-							<div class="all-wallets">
-								<div class="converted-price php">PHP 0.00</div>
-								<div class="currency">PESO</div>
-							</div>
+						<div class="bottom d-flex flex-column align-items-center justify-content-center">
 							<div class="all-wallets">
 								<div class="converted-price btc">0.000000</div>
 								<div class="currency">BITCOIN</div>
+							</div>
+							<div class="all-wallets mt-3">
+								<div class="converted-price php">PHP 0.00</div>
+								<div class="currency">PESO</div>
 							</div>
 						</div>
 					</div>

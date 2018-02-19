@@ -13,7 +13,7 @@
 
 	<!-- New Font Awesome -->
 	<link rel="stylesheet" type="text/css" href="/assets/font-awesome/css/font-awesome.min.css">
-	
+
 	{{-- <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> --}}
 	<script defer src="/assets/fontawesome5/svg-with-js/css/fa-svg-with-js.css"></script>
 	<script defer src="/assets/fontawesome5/svg-with-js/js/fontawesome-all.js"></script>
