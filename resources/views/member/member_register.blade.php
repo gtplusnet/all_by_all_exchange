@@ -8,7 +8,7 @@
 		</div>
    		<div class="registration-container">
 
-   			{{-- <form method="post" action="/member/dashboard">
+   			<form method="post" action="/member/dashboard">
     			{{csrf_field()}}
                 <div class="flex-me">
                     <div class="left">
@@ -34,9 +34,9 @@
                         <button class="btn btn-register" type="submit">REGISTER</button>
                     </div>
                 </div>
-    		</form> --}}
+    		</form>
 
-			<form method="post" action="/member/dashboard" class="mt-4">
+			{{-- <form method="post" action="/member/dashboard" class="mt-4">
 				{{csrf_field()}}
 				<div class="flex-me form-row">
 					<div class="col-lg-6">
@@ -66,7 +66,7 @@
 	                    </div>
 	                </div>
 				</div>
-			</form>
+			</form> --}}
     	</div>
 		<div class="register-footer">
 			<div class="text">All Rights Reserved &copy; 2018 allbyall-exchange.com</div>
