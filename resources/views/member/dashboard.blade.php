@@ -150,7 +150,7 @@
 								</nav>
 							</div>
 							<div class="button-holder">
-								<a class="btn btn-down-history" href="javascript:">DOWNLOAD HISTORY {{-- <img src="/assets/img/download-history-icon.png" alt=""> --}}</a>
+								<a class="btn btn-down-history" href="javascript:">DOWNLOAD HISTORY <i class="far fa-arrow-alt-circle-down"></i>{{-- <img src="/assets/img/download-history-icon.png" alt=""> --}}</a>
 							</div>
 						</div>
 						<div class="bottom tab-content text-center">
