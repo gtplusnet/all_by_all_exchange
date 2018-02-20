@@ -19,15 +19,15 @@
 	<script defer src="/assets/fontawesome5/svg-with-js/js/fontawesome-all.js"></script>
 
 	<!-- Bootstrap 4-->
-    <link href="/assets/bootstrap4/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/assets/bootstrap4/dist/css/bootstrap.min.css" rel="stylesheet">
 
 	<!--External css-->
-    <link rel="stylesheet" href="/assets/css/global.css">
-    <link rel="stylesheet" href="/assets/css/mobile_nav.css">
-    <link rel="stylesheet" href="/assets/css/member_layout.css">
+	<link rel="stylesheet" href="/assets/css/global.css">
+	<link rel="stylesheet" href="/assets/css/mobile_nav.css">
+	<link rel="stylesheet" href="/assets/css/member_layout.css">
 
 	<!--wow animation-->
-    <link rel="stylesheet" href="/assets/wow/css/animate.css">
+	<link rel="stylesheet" href="/assets/wow/css/animate.css">
 
 	@yield("css")
 
@@ -36,31 +36,31 @@
 <body>
 	<div id="overlay" onclick="off()"></div>
 	<div class="side-nav">
-	    <nav class="pushmenu pushmenu-left">
-	        <div class="space1"></div>
-	        <a href="javascript:">
-	            <div class="profile-img-container">
-	                <div class="row-no-padding clearfix">
-	                    <div class="col-xs-12">
-	                        <div class="profile-img"><img src="/assets/img/profile.jpg"></div>
-	                        <div class="text-holder">
-	                            <div class="name-text text-overflow">Lorem Ipsum</div>
-	                            <div class="subtext text-overflow">loremipsum@gmail.com</div>
-	                        </div>
-	                    </div>
-	                </div>
-	            </div>
-	        </a>
-	        <div class="space1"></div>
-	        <span>BROWSE</span>
-	        <ul class="links">
-	            <li> <a onclick="off()" href="/member/dashboard"><img src="/assets/img/wallet-cash.svg" width="16" height="16"> MY WALLET</a></li>
-	            <li> <a onclick="off()" href="/member/cash_in"><img src="/assets/img/cash-in.svg" width="16" height="16"> CASH IN</a></li>
-	            <li> <a onclick="off()" href="/member/cash_out"><img src="/assets/img/money.svg" width="16" height="16"> CASH OUT</a></li>
-	            <li> <a onclick="off()" href="/member/notification"><img src="/assets/img/mail.svg" width="16" height="16"> NOTIFICATION</a></li>
+		<nav class="pushmenu pushmenu-left">
+			<div class="space1"></div>
+			<a href="javascript:">
+				<div class="profile-img-container">
+					<div class="row-no-padding clearfix">
+						<div class="col-xs-12">
+							<div class="profile-img"><img src="/assets/img/profile.jpg"></div>
+							<div class="text-holder">
+								<div class="name-text text-overflow">Lorem Ipsum</div>
+								<div class="subtext text-overflow">loremipsum@gmail.com</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</a>
+			<div class="space1"></div>
+			<span>BROWSE</span>
+			<ul class="links">
+				<li> <a onclick="off()" href="/member/dashboard"><img src="/assets/img/wallet-cash.svg" width="16" height="16"> MY WALLET</a></li>
+				<li> <a onclick="off()" href="/member/cash_in"><img src="/assets/img/cash-in.svg" width="16" height="16"> CASH IN</a></li>
+				<li> <a onclick="off()" href="/member/cash_out"><img src="/assets/img/money.svg" width="16" height="16"> CASH OUT</a></li>
+				<li> <a onclick="off()" href="/member/notification"><img src="/assets/img/mail.svg" width="16" height="16"> NOTIFICATION</a></li>
 				<li> <a onclick="off()" href="/member/notification"><img src="/assets/img/logout.svg" width="16" height="16"> LOGOUT</a></li>
-	        </ul>
-	    </nav>
+			</ul>
+		</nav>
 	</div>
 
 	<div class="blur-me">
@@ -74,26 +74,27 @@
 		@elseif(Request::segment(2)=="register")
 
 		@elseif (Request::segment(1)=="member")
-		<footer>
-			<div class="container">
-				<div class="bottom-text">© 2018 allbyall-exchange.com</div>
-			</div>
-		</footer>
+			<footer>
+				<div class="container">
+					<div class="bottom-text">© 2018 allbyall-exchange.com</div>
+				</div>
+			</footer>
 		@endif
 	</div>
 
 	<div id="global_modal" class="modal fade" role="dialog" >
-        <div class="modal-dialog">
-            <!-- Modal content-->
-            <div class="modal-content modal-content-global">
-            </div>
-        </div>
-    </div>
-    <div class="multiple_global_modal_container"></div>
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content modal-content-global">
+			</div>
+		</div>
+	</div>
+	<div class="multiple_global_modal_container"></div>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="/assets/bootstrap4/dist/js/bootstrap.min.js"></script>
+	<script src="/assets/bootstrap4/dist/js/bootstrap.min.js"></script>
+
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script type="text/javascript" src="/assets/js/match-height.js"></script>
 	<script type="text/javascript" src="/assets/js/globals_js.js"></script>
@@ -103,7 +104,7 @@
 	<script src="/assets/wow/js/wow.min.js"></script>
 
 	<script>
-	      new WOW().init();
+	new WOW().init();
 	</script>
 	<!--END WOW JS-->
 
