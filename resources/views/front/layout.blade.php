@@ -54,11 +54,11 @@
 	        <div class="space1"></div>
 	        <span>BROWSE</span>
 	        <ul class="links">
-	            <li> <a onclick="off()" href="/member/dashboard"><img src="/assets/img/wallet.png" alt=""> MY WALLET</a></li>
-	            <li> <a onclick="off()" href="/member/cash_in"><img src="/assets/img/mob-cashin.png" alt=""> CASH IN</a></li>
-	            <li> <a onclick="off()" href="/member/cash_out"><img src="/assets/img/money.png" alt=""> CASH OUT</a></li>
-	            <li> <a onclick="off()" href="/member/notification"><img src="/assets/img/envelope.png" alt=""> NOTIFICATION</a></li>
-				<li> <a onclick="off()" href="/member/notification"><i class="fas fa-sign-out-alt"></i> LOGOUT</a></li>
+	            <li> <a onclick="off()" href="/member/dashboard"><img src="/assets/img/wallet-cash.svg" width="16" height="16"> MY WALLET</a></li>
+	            <li> <a onclick="off()" href="/member/cash_in"><img src="/assets/img/cash-in.svg" width="16" height="16"> CASH IN</a></li>
+	            <li> <a onclick="off()" href="/member/cash_out"><img src="/assets/img/money.svg" width="16" height="16"> CASH OUT</a></li>
+	            <li> <a onclick="off()" href="/member/notification"><img src="/assets/img/mail.svg" width="16" height="16"> NOTIFICATION</a></li>
+				<li> <a onclick="off()" href="/member/notification"><img src="/assets/img/logout.svg" width="16" height="16"> LOGOUT</a></li>
 	        </ul>
 	    </nav>
 	</div>

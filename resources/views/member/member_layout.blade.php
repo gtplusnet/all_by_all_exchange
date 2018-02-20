@@ -14,25 +14,25 @@
 		<nav class="navi">
 			<span class="navi-link {{ Request::segment(2) == "dashboard" ? "active" : "" }}">
 				<a href="/member/dashboard">
-					<img src="/assets/img/my-wallet-icon.png" alt="">
+					<img src="/assets/img/wallet-cash.svg" width="24" height="24">
 					<span class="nav-text"> My Wallet</span>
 				</a>
 			</span>
 			<span class="navi-link {{ Request::segment(2) == "cash_in" ? "active" : "" }}">
 				<a href="/member/cash_in">
-					<img src="/assets/img/cash-in-icon.png" alt="">
+					<img src="/assets/img/cash-in.svg" width="24" height="24">
 					<span class="nav-text"> Cash In</span>
 				</a>
 			</span>
 			<span class="navi-link {{ Request::segment(2) == "cash_out" ? "active" : "" }}">
 				<a href="/member/cash_out">
-					<img src="/assets/img/cash-out-icon.png" alt="">
+					<img src="/assets/img/money.svg" width="24" height="24">
 					<span class="nav-text">Cash Out</span>
 				</a>
 			</span>
 			<span class="navi-link {{ Request::segment(2) == "notification" ? "active" : "" }}">
 				<a href="/member/notification">
-					<img src="/assets/img/notif-icon.png" alt="">
+					<img src="/assets/img/mail.svg" width="24" height="24">
 					<span class="nav-text"> Notification</span>
 				</a>
 			</span>
