@@ -71,6 +71,8 @@ $bold: 700;
 	//PESO WALLET
 	.peso-wallet
 	{
+
+		box-shadow: 1px 2px 2px rgba(0,0,0,0.1);
 		.top
 		{
 			.button-holder
@@ -247,6 +249,8 @@ $bold: 700;
     //ABA WALLET
 	.aba-wallet
 	{
+		box-shadow: 1px 2px 2px rgba(0,0,0,0.1);
+
 		.top
 		{
 			.btn-convert
@@ -271,6 +275,7 @@ $bold: 700;
 
 		.bottom
 		{
+
 			// margin: -50px;
 			overflow-x: hidden;
 
@@ -323,13 +328,18 @@ $bold: 700;
 				// 	border-bottom: 2px solid #daa215;
 				// }
 			}
+
+			
 		}
+
+
 
 	}
 
 	//BITCOIN WALLET
 	.bitcoin-wallet
 	{
+		box-shadow: 1px 2px 2px rgba(0,0,0,0.1);
 		.top
 		{
 			.btn-convert
@@ -400,9 +410,71 @@ $bold: 700;
 				// 	border-bottom: 2px solid #daa215;
 				// }
 			}
+
+
 		}
 
 	}
+
+	//FOOTER BUTTONS
+	.footer{
+			.btn-container
+				{
+					.btn-convert
+					{
+						@include transition(0.3s);
+						border-radius: 0;
+						background-color: #daa215;
+						border: 1px solid #daa215;
+						color: #fff;
+						min-width: 49.5%;
+
+						img
+						{
+							border-right: 1px solid #fff;
+							padding: 3px 5px;
+						}
+
+						&:hover
+						{
+							background-color: inherit;
+							color: #daa215;
+						}
+					}
+
+
+
+					.btn-send
+					{
+						@extend .btn-convert;
+					}
+
+					.btn-request
+					{
+						@extend .btn-convert;
+					}
+
+					@media screen and (max-width: 500px)
+					{
+						margin-top: 10px;
+
+						.btn-convert
+						{
+							width: 100%;
+						}
+
+						.btn-send
+						{
+							width: 100%;
+						}
+
+						.btn-request
+						{
+							width: 100%;
+						}
+					}
+				}
+		}
 
 	//GET STARTED
 	.get-started
@@ -497,4 +569,8 @@ $bold: 700;
 			}
 		}
 	}
+}
+
+#abaToPeso, #abaToBtc, #pesoInput, #btcInput{
+	font-size: 13px;
 }

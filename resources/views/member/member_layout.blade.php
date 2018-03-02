@@ -64,7 +64,7 @@
 	<div class="scroll-up"><img src="/assets/img/scroll-up.png"></div>
 
 	@yield("content")
-
+	@yield("script")
 	<!--End Dashboard-->
 
 @endsection

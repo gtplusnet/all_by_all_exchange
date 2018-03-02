@@ -12,5 +12,12 @@ class MemberDashboardController extends Controller
 	    $data["Page"] = "Dashboard";
         return view ("member.dashboard");
     }
+
+    //popups
+    public function peso_wall_add()
+    {
+    	$data["page"] = "Peso Wallet Address";
+    	return view ("member.popups.peso_walletaddress", $data);
+    }
 }
 

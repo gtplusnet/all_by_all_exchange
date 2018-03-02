@@ -22,3 +22,7 @@ Route::any('/member/dashboard', 		'MemberDashboardController@index');
 Route::any('/member/cash_in', 			'MemberCashInController@index');
 Route::any('/member/cash_out', 			'MemberCashOutController@index');
 Route::any('/member/notification', 		'MemberNotificationController@index');
+
+
+//POPUPS
+Route::get('/member/dashboard/peso_walletaddress', 		'MemberDashboardController@peso_wall_add');
