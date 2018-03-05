@@ -82,16 +82,16 @@
                 		<td><h6 style="font-size: 13px;">-</h6></td>
                 	</tr>
                 </table>
-                <div class="d-flex flex-row justify-content-centerx`">
-                <div class="col"><div class="line-btn-y" id="step1_next">BACK</div></div>
-                <div class="col"><div class="line-btn-y" id="step1_next">NEXT</div></div>
+                <div class="d-flex flex-row justify-content-center">
+                <div class="col"><div class="line-btn-y" id="step2_back">BACK</div></div>
+                <div class="col"><div class="line-btn-y" id="step2_next">NEXT</div></div>
                 </div>
                 
 						
 					</div>
 
 					{{-- STEP 3 --}}
-					<div class="per-option t-center">
+					<div class="d-none per-option t-center">
 						<div class="icon-container"><img src="/assets/img/bank-depo.png"></div>
 						<div class="title"><h5>Recipient Details</h5></div>
 				<small class="my-0 py-0 font-weight-bold">Bank Account Number:</small>
@@ -120,8 +120,8 @@
                 	</tr>
                 </table>
                 <div class="d-flex flex-row justify-content-centerx`">
-                <div class="col"><div class="line-btn-y" id="step1_next">BACK</div></div>
-                <div class="col"><div class="line-btn-y popup" id="step1_next" link="/member/dashboard/cashout_complete_payment" size="md">COMPLETE PAYMENT</div></div>
+                <div class="col"><div class="line-btn-y" id="step3_back">BACK</div></div>
+                <div class="col"><div class="line-btn-y popup" id="step3_complete" link="/member/dashboard/cashout_complete_payment" size="md">COMPLETE PAYMENT</div></div>
                 </div>
                 
 						
@@ -129,37 +129,37 @@
 
 
 					{{-- STEP 4 --}}
-					<div class="d-none per-option t-center">
+					<div class=" per-option t-center">
 						<div class="icon-container"><img src="/assets/img/bank-depo.png"></div>
 						<div class="title"><h5>Sell Order #123123</h5></div>
-				<small class="my-0 py-0 font-weight-bold">Bank Account Number:</small>
-                  <input type="text" class="form-control mb-2">
-                  <small class="my-0 py-0 font-weight-bold">Account Holder Name:</small>
-                  <input type="text" class="form-control mb-2">
-                  <small class="my-0 py-0 font-weight-bold">Mobile Number (optional):</small>
-                  <input type="text" class="form-control mb-2">
-						<small class="text-muted">Processing Time: Orders placed before 10 AM are processed same business day. (Monday to Friday)</small>
+						<div class="alert alert-success p-3 my-3">
+							<small>
+								Thank you! We have received your payment. We will send you an email notification once we have processed your payout.
+							</small>
+							
+						</div>
+				
                 <table class="table table-striped mt-2 text-left table-bordered">
+                	<tr>
+                		<td><h6 style="font-size: 13px;">Status</h6></td>
+                		<td><h6 style="font-size: 13px;">Processing</h6></td>
+                	</tr>
                 	<tr>
                 		<td><h6 style="font-size: 13px;">Payment Method</h6></td>
                 		<td><h6 style="font-size: 13px;">BPI</h6></td>
                 	</tr>
                 	<tr>
-                		<td><h6 style="font-size: 13px;">Recipient will get</h6></td>
+                		<td><h6 style="font-size: 13px;">Bank Account Name</h6></td>
                 		<td><h6 style="font-size: 13px;">-</h6></td>
                 	</tr>
                 	<tr>
-                		<td><h6 style="font-size: 13px;">Payout Fee</h6></td>
-                		<td><h6 style="font-size: 13px;">-</h6></td>
-                	</tr>
-                	<tr>
-                		<td><h6 style="font-size: 13px;">Amount Due</h6></td>
+                		<td><h6 style="font-size: 13px;">Bank Account Number</h6></td>
                 		<td><h6 style="font-size: 13px;">-</h6></td>
                 	</tr>
                 </table>
-                <div class="d-flex flex-row justify-content-centerx`">
-                <div class="col"><div class="line-btn-y" id="step1_next">BACK</div></div>
-                <div class="col"><div class="line-btn-y popup" id="step1_next" link="/member/dashboard/cashout_complete_payment" size="md">COMPLETE PAYMENT</div></div>
+                <div class="d-flex flex-row justify-content-center">
+                <div class="col"><div class="line-btn-y" id="step4_cancel">Cancel Order</div></div>
+                <div class="col"><div class="line-btn-y popup" id="step4_paidmark" link="/member/dashboard/cashout_complete_payment" size="md">Mark As Paid</div></div>
                 </div>
                 
 						
