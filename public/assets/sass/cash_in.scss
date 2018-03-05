@@ -45,7 +45,6 @@ $text-orange: #ff3503;
 	.content-wrapper
 	{
 		padding-top: 50px;
-		min-height: 720px;
 
 		.holder
 		{
@@ -84,6 +83,8 @@ $text-orange: #ff3503;
 					color: $text-dark;
 				}
 			}
+
+			
 			.cash-option
 			{
 				.per-option
@@ -91,7 +92,7 @@ $text-orange: #ff3503;
 					background-color: #fff;
 					border: 1px solid #e5e5e5;
 					// padding: 35px 0;
-                    padding: 40px 80px;
+                    padding: 40px 40px;
 
 					.title
 					{
@@ -102,3 +103,6 @@ $text-orange: #ff3503;
 		}
 	}
 }
+
+
+

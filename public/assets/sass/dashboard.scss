@@ -113,6 +113,51 @@ $bold: 700;
 				flex-wrap: wrap;
 			}
 
+			.peso-wallets
+			{
+				text-align: center;
+				//cursor: pointer;
+				//adding-bottom: 50px;
+				// margin: 50px;
+				border-bottom: 2px solid #fff;
+
+				.peso
+				{
+					color: #454545;
+				}
+
+				.btc
+				{
+					color: #a4a4a4;
+				}
+
+                .php
+                {
+                    @extend .btc;
+                }
+
+				.converted-price
+				{
+					font-family: $content-text;
+					font-weight: 400;
+					font-size: 30px;
+				}
+
+				.currency
+				{
+					font-family: $display-text;
+					font-weight: $bold;
+					font-size: 15px;
+					color: #daa215;
+				}
+
+
+				// &:hover
+				// {
+				// 	border-bottom: 2px solid #daa215;
+				// }
+			}
+
             .text-price
 			{
 				font-family: $content-text;
