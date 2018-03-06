@@ -25,7 +25,7 @@
      
      
      <textarea name="" id="" cols="30" rows="5" class="form-control mb-2" placeholder="Remarks Here"></textarea>
-     <button class="btn btn-primary">Edit Transaction</button>
+     <button class="btn btn-primary" data-dismiss="modal">Edit Transaction</button>
    </div>
  </div>
  <div class="text-center">

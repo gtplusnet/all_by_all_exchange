@@ -49,14 +49,14 @@
 							<div class="currency">CURRENT ABA WALLET</div>
 						</div>
 						<div class="aba-wallets mt-3" style="min-width: 80%;">
-							<div class="d-flex justify-content-between flex-row border pt-2">
-								<div class="col currency text-left" ><h5 id="abaToBtcConvert" class="text-primary" style="cursor: pointer;">BITCOIN</h5></div>
+							<div class="d-flex justify-content-between flex-row border pt-2" id="abaToBtcConvert">
+								<div class="col currency text-left" ><h5  class="" style="cursor: pointer;">BITCOIN</h5></div>
 							<div class="col converted-price btc"><h5>0.000000</h5></div>
 							</div>
 						</div>
 						<div class="aba-wallets" style="min-width: 80%;">
-							<div class="d-flex justify-content-between flex-row border pt-2">
-								<div class="col currency text-left" ><h5 id="abaToPesoConvert" style="cursor: pointer;">PESO</h5></div>
+							<div class="d-flex justify-content-between flex-row border pt-2" id="abaToPesoConvert">
+								<div class="col currency text-left" ><h5  style="cursor: pointer;">PESO</h5></div>
 							<div class="col converted-price btc"><h5>0.000000</h5></div>
 							</div>
 						</div>
@@ -207,16 +207,17 @@
 		{{-- HISTORY --}}
 		<nav class="mt-4">
 		  <div class="nav nav-tabs" id="nav-tab" role="tablist">
-		    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-sending" role="tab" aria-controls="nav-sending" aria-selected="true">Sending Transactions</a>
-		    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-receiving" role="tab" aria-controls="nav-receiving" aria-selected="false">Receiving Transactions</a>
-		    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-cashin" role="tab" aria-controls="nav-cashin" aria-selected="false">Cash In Transactions</a>
-		     <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-cashout" role="tab" aria-controls="nav-cashout" aria-selected="false">Cash Out Transactions</a>
-		     <a class="ml-auto nav-link text-warning"  href="javascript:" role="tab" aria-controls="nav-cashout" aria-selected="false"><i class="fas fa-download"></i> Download History</a>
+		  	<a class="nav-item nav-link active" id="nav-conversion-tab" data-toggle="tab" href="#nav-conversion" role="tab" aria-controls="nav-conversion" aria-selected="true"><small>Conversion History</small></a>
+		    <a class="nav-item nav-link" id="nav-sending-tab" data-toggle="tab" href="#nav-sending" role="tab" aria-controls="nav-sending" aria-selected="true"><small>Sending Transactions</small></a>
+		    <a class="nav-item nav-link" id="nav-receiving-tab" data-toggle="tab" href="#nav-receiving" role="tab" aria-controls="nav-receiving" aria-selected="false"><small>Receiving Transactions</small></a>
+		    <a class="nav-item nav-link" id="nav-cashin-tab" data-toggle="tab" href="#nav-cashin" role="tab" aria-controls="nav-cashin" aria-selected="false"><small>Cash In Transactions</small></a>
+		     <a class="nav-item nav-link" id="nav-cashout-tab" data-toggle="tab" href="#nav-cashout" role="tab" aria-controls="nav-cashout" aria-selected="false"><small>Cash Out Transactions</small></a>
+		     <a class="ml-auto nav-link text-warning"  href="javascript:" role="tab" aria-controls="nav-cashout" aria-selected="false"><small><i class="fas fa-download"></i> Download History</small></a>
 		  </div>
 		</nav>
 		<div class="tab-content" id="nav-tabContent">
 			{{-- Sending Transaction --}}
-		  <div class="tab-pane fade show active" id="nav-sending" role="tabpanel" aria-labelledby="nav-sending-tab">
+		  <div class="tab-pane fade " id="nav-sending" role="tabpanel" aria-labelledby="nav-sending-tab">
 		  	<div class="table-responsive border">
 			  <table class="table table-hover table-striped">
 			    <thead>
@@ -335,6 +336,34 @@
 			</div>
 		  </div>
 
+		   {{-- Conversion History --}}
+		  <div class="tab-pane fade show active" id="nav-conversion" role="tabpanel" aria-labelledby="nav-conversionx`-tab">
+		  	<div class="table-responsive border">
+			  <table class="table table-hover table-striped">
+			    <thead>
+			    <tr>
+			      <th scope="col">Date</th>
+			      <th scope="col">Description</th>
+			      <th scope="col">From</th>
+			      <th scope="col">To</th>
+			      <th scope="col">Conversion Rate</th>
+			      <th scope="col">Value</th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			  	<tr>
+			  		<td>March 2</td>
+			  		<td>ConvertI</td>
+			  		<td>ABA WALLET</td>
+			  		<td>PHP WALLET</td>
+			  		<td>+5 000.00</td>
+			  		<td></td>
+			  	</tr>
+			  </tbody>
+			  </table>
+			</div>
+		  </div>
+
 		</div>
 
 	</div>
@@ -378,14 +407,14 @@
 	abaToPesoConvert.addEventListener('click', changeColor1);
 	abaToBtcConvert.addEventListener('click', changeColor2);
 	function changeColor1(){
-		abaToPesoConvert.classList.add("text-primary");
-		abaToBtcConvert.classList.remove("text-primary");
+		abaToPesoConvert.classList.add("bg-convert");
+		abaToBtcConvert.classList.remove("bg-convert");
 		document.getElementById("abaConvertModal").innerHTML = '<a class="popup btn btn-block btn-convert" href="javascript:" link="/member/dashboard/aba_to_peso_conv" ><i class="fas fa-exchange-alt"></i> <span>|</span> CONVERT</a>';
 	}
 
 	function changeColor2(){
-		abaToPesoConvert.classList.remove("text-primary");
-		abaToBtcConvert.classList.add("text-primary");
+		abaToPesoConvert.classList.remove("bg-convert");
+		abaToBtcConvert.classList.add("bg-convert");
 		document.getElementById("abaConvertModal").innerHTML = '<a class="popup btn btn-block btn-convert" href="javascript:" link="/member/dashboard/aba_to_btc_conv" ><i class="fas fa-exchange-alt"></i> <span>|</span> CONVERT</a>';
 	}
 

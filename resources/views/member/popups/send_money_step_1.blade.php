@@ -33,23 +33,28 @@
      <textarea name="" class="form-control" id="" cols="20" rows="5" placeholder="Remarks here"></textarea>
    </div>
  </div>
-   <div class="float-right col-lg-4">
+ <div class="d-flex flex-row align-items-end">
+  <div class="col text-center">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="popup btn btn-warning" link="/member/dashboard/send_money_step_2" size="lg" href="javascript:">Continue</button>
+        
+</div>
+   <div class="col-lg-4">
      <h6>Audience:</h6>
-      <select name="audienceDropdown" id="audienceDropdown" onchange="changeLabel(event)" class="form-control">
+      <select name="audienceDropdown" id="audienceDropdown"  class="form-control">
          <option value="Participants Only">Participants Only</option>
          <option value="Public">Public</option>
          <option value="Friends">Friends</option>
        </select>
    </div>
  </div>
- <div class="text-center">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-        <button type="button" class="popup btn btn-warning" link="/member/dashboard/send_money_step_2" size="lg" href="javascript:">Continue</button>
-        <div class="alert alert-warning p-2 my-3 mx-2">
+ <div class="alert alert-warning p-2 my-3 mx-2">
           <small>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, necessitatibus molestias harum nisi doloremque voluptas.
           </small>
         </div>
-</div>
+   
+ </div>
+ 
 </div>
 </div>
