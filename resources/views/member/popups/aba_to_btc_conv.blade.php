@@ -42,7 +42,7 @@
         </ul>
         <div class="text-center">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-        <button type="button" class="btn btn-warning">Convert</button>
+        <button type="button" class="btn btn-warning popup" link="/member/dashboard/send_money_step_3" size="md">Convert</button>
         <div class="alert alert-warning p-2 my-3 mx-2">
             <small>
             	Please keep in mind that the prices of digital currencies are volatile. Prices may go up or down at any time.

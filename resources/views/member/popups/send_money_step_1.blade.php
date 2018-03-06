@@ -37,6 +37,8 @@
      <h6>Audience:</h6>
       <select name="audienceDropdown" id="audienceDropdown" onchange="changeLabel(event)" class="form-control">
          <option value="Participants Only">Participants Only</option>
+         <option value="Public">Public</option>
+         <option value="Friends">Friends</option>
        </select>
    </div>
  </div>

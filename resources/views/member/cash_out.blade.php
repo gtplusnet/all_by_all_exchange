@@ -33,7 +33,7 @@
 				{{-- <div class="cash-option row clearfix mt-5"> --}}
 				<div class="cash-option d-flex align-items-center justify-content-center mt-4">
 					{{-- STEP 1 --}}
-					<div class="d-none per-option t-center">
+					<div class="per-option t-center" id="step_1">
 						<div class="icon-container"><img src="/assets/img/bank-depo.png"></div>
 						<div class="title"><h5>How would you like to Cash In?</h5></div>
 						<h6 class="mt-3">Over-the-Counter Banking</h6>
@@ -54,7 +54,7 @@
 					</div>
 
 					{{-- STEP 2 --}}
-					<div class="d-none per-option t-center">
+					<div class="d-none per-option t-center" id="step_2">
 						<div class="icon-container"><img src="/assets/img/bank-depo.png"></div>
 						<div class="title"><h5>How much would you like to Cash In?</h5></div>
 						<div class="input-group mb-3">
@@ -91,7 +91,7 @@
 					</div>
 
 					{{-- STEP 3 --}}
-					<div class="d-none per-option t-center">
+					<div class="d-none per-option t-center" id="step_3">
 						<div class="icon-container"><img src="/assets/img/bank-depo.png"></div>
 						<div class="title"><h5>Recipient Details</h5></div>
 				<small class="my-0 py-0 font-weight-bold">Bank Account Number:</small>
@@ -129,7 +129,7 @@
 
 
 					{{-- STEP 4 --}}
-					<div class=" per-option t-center">
+					<div class="d-none per-option t-center" id="step_4">
 						<div class="icon-container"><img src="/assets/img/bank-depo.png"></div>
 						<div class="title"><h5>Sell Order #123123</h5></div>
 						<div class="alert alert-success p-3 my-3">
@@ -194,4 +194,5 @@
 @endsection
 
 @section("script")
+
 @endsection
