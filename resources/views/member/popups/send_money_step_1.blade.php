@@ -19,7 +19,7 @@
      <div class="col-lg-6 col-md-6 col-sm-12">
        <h6>Amount</h6>
        <div class="input-group mb-3">
-        <input type="text" class="form-control" placeholder="00" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <input type="text" class="form-control" placeholder="0.00" aria-label="Recipient's username" aria-describedby="basic-addon2">
         <div class="input-group-append">
           <span class="input-group-text" id="sourceWalletLabel">ABA</span>
         </div>
@@ -29,7 +29,7 @@
   <div class="row mb-2">
    <div class="col-sm">
      <h6>To:</h6>
-     <input type="text" class="form-control mb-1">
+     <input type="text" class="form-control mb-1" placeholder="Please input wallet address">
      <textarea name="" class="form-control" id="" cols="20" rows="5" placeholder="Remarks here"></textarea>
    </div>
  </div>
@@ -50,7 +50,7 @@
  </div>
  <div class="alert alert-warning p-2 my-3 mx-2">
           <small>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, necessitatibus molestias harum nisi doloremque voluptas.
+              Sending funds to someone you don't know? Allbyall Exchange are non-reversible.
           </small>
         </div>
    
