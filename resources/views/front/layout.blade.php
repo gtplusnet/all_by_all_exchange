@@ -108,6 +108,35 @@
 	</script>
 	<!--END WOW JS-->
 
+	<script>
+$(document).ready(function(){
+	$("#step1_next").on('click', function(){
+		$("#step_1").addClass("d-none");
+		$("#step_2").removeClass("d-none");
+	});
+
+	$("#step2_next").on('click', function(){
+		$("#step_2").addClass("d-none");
+		$("#step_3").removeClass("d-none");
+	});
+
+	$("#step2_back").on('click', function(){
+		$("#step_2").addClass("d-none");
+		$("#step_1").removeClass("d-none");
+	});
+
+	$("#step3_back").on('click', function(){
+		$("#step_3").addClass("d-none");
+		$("#step_2").removeClass("d-none");
+	});
+
+	$("cashout_complete").on('click', function(){
+		$("#step_3").addClass("d-none");
+		$("#step_4").removeClass("d-none");
+	});
+});
+</script>
+
 	@yield("js")
 
 </body>

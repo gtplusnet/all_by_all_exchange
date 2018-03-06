@@ -43,7 +43,7 @@
         <input type="text" class="form-control" placeholder="" aria-label="0" aria-describedby="basic-addon2" id="transactionnumber">
         
       </div>
-      <button class="btn btn-warning btn">Pay</button>
+      <button class="btn btn-warning btn" id="cashout_complete" data-dismiss="modal">Pay</button>
         
         </div>
       </div>

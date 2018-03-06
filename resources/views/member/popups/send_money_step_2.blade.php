@@ -19,7 +19,7 @@
     </div>
     <div class="border-left border-primary pl-2">
       <h6 class="my-0 text-muted">From Wallet</h6>
-     <p class="mb-3">PHP 50 000</p>
+     <p class="mb-3"><i class="fas fa-credit-card"></i> PHP 50 000</p>
     </div>
      
      
