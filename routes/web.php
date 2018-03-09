@@ -37,3 +37,8 @@ Route::get('/member/dashboard/send_money_step_2', 		'MemberDashboardController@s
 Route::get('/member/dashboard/send_money_step_3', 		'MemberDashboardController@send_money_step_3');
 Route::get('/member/dashboard/cashin_mark_as_paid', 		'MemberDashboardController@cashin_mark_as_paid');
 Route::get('/member/dashboard/cashout_complete_payment', 		'MemberDashboardController@cashout_complete_payment');
+Route::get('/member/dashboard/conversion_history', 		'MemberDashboardController@conversion_history');
+Route::get('/member/dashboard/sending_transactions', 		'MemberDashboardController@sending_transactions');
+Route::get('/member/dashboard/receiving_transactions', 		'MemberDashboardController@receiving_transactions');
+Route::get('/member/dashboard/cashin_history', 		'MemberDashboardController@cashin_history');
+Route::get('/member/dashboard/cashout_history', 		'MemberDashboardController@cashout_history');

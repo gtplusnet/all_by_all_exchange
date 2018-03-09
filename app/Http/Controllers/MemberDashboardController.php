@@ -85,5 +85,34 @@ class MemberDashboardController extends Controller
         $data["page"] = "Cash Out Complete Payment";
         return view ("member.popups.cashout_complete_payment", $data);
     }
+
+    public function conversion_history()
+    {
+        $data["page"] = "Conversion History";
+        return view ("member.popups.conversion_history", $data);
+    }
+
+    public function sending_transactions()
+    {
+        $data["page"] = "Sending Transactions";
+        return view ("member.popups.sending_transactions", $data);
+    }
+
+    public function receiving_transactions()
+    {
+        $data["page"] = "Receiving Transactions";
+        return view ("member.popups.receiving_transactions", $data);
+    }
+
+    public function cashin_history()
+    {
+        $data["page"] = "Cash Out History";
+        return view ("member.popups.cashin_history", $data);
+    }
+    public function cashout_history()
+    {
+        $data["page"] = "Cash Out History";
+        return view ("member.popups.cashout_history", $data);
+    }
 }
 

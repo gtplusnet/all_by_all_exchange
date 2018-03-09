@@ -28,8 +28,8 @@
 				</div>
 				<div class="footer">
 					<div class="btn-container mt-2 d-flex flex-row align-items-stretch justify-content-between">
-						<a class="btn btn-send popup" href="javascript:" link="/member/dashboard/peso_to_aba_conv"><i class="fas fa-exchange-alt"></i> <span>|</span> CONVERT</a>
-						<a class="btn btn-send popup" href="javascript:" link="/member/dashboard/send_money_step_1" size="lg"><i class="far fa-arrow-alt-circle-right"></i> <span>|</span> SEND</a>
+						<a class="btn btn-sm-block btn-send popup" href="javascript:" link="/member/dashboard/peso_to_aba_conv"><i class="fas fa-exchange-alt"></i> <span>|</span> CONVERT</a>
+						<a class="btn btn-sm-block btn-send popup" href="javascript:" link="/member/dashboard/send_money_step_1" size="lg"><i class="far fa-arrow-alt-circle-right"></i> <span>|</span> SEND</a>
 					</div>
 				</div>
 			</div>
@@ -66,9 +66,11 @@
 					
 				</div>
 				<div class="footer">
-					<div class="btn-container mt-2 d-flex flex-column align-items-center justify-content-center" id="abaConvertModal">
-						<a class="popup btn btn-block btn-convert" href="javascript:" link="/member/dashboard/aba_to_btc_conv" ><i class="fas fa-exchange-alt"></i> <span>|</span> CONVERT</a>
+					<div class="btn-container mt-2 d-flex flex-row align-items-center justify-content-between" id="abaConvertModal">
+						<a class="popup btn btn-convert" href="javascript:" link="/member/dashboard/aba_to_btc_conv" ><i class="fas fa-exchange-alt"></i> <span>|</span> CONVERT</a>
+						<a class="btn btn-send popup" href="javascript:" link="/member/dashboard/send_money_step_1" size="lg"><i class="far fa-arrow-alt-circle-right"></i> <span>|</span> SEND</a>
 					</div>
+
 				</div>
 			</div>
 
@@ -228,12 +230,12 @@
 			    </tr>
 			  </thead>
 			  <tbody>
-			  	<tr>
+			  	<tr  class="popup" link="/member/dashboard/sending_transactions">
 			  		<td>March 2</td>
 			  		<td>Sent money to a bitcoin address from PHP Wallet</td>
 			  		<td>- 15 000.00</td>
 			  	</tr>
-			  	<tr>
+			  	<tr  class="popup" link="/member/dashboard/sending_transactions">
 			  		<td>March 1</td>
 			  		<td>Sent money to a bitcoin address from PHP Wallet</td>
 			  		<td>- 35 000.00</td>
@@ -248,19 +250,19 @@
 		  	<div class="table-responsive border">
 			  <table class="table table-hover table-striped">
 			    <thead>
-			    <tr>
+			    <tr >
 			      <th scope="col">Date</th>
 			      <th scope="col">Description</th>
 			      <th scope="col">Value</th>
 			    </tr>
 			  </thead>
 			  <tbody>
-			  	<tr>
+			  	<tr class="popup" link="/member/dashboard/receiving_transactions">
 			  		<td>March 2</td>
 			  		<td>Received money from Juan Dela Cruz</td>
 			  		<td>+ 15 000.00</td>
-			  	</tr>
-			  	<tr>
+			  	</tr >
+			  	<tr class="popup" link="/member/dashboard/receiving_transactions">
 			  		<td>March 1</td>
 			  		<td>Received money from Juan Dela Cruz</td>
 			  		<td>+ 35 000.00</td>
@@ -285,7 +287,7 @@
 			    </tr>
 			  </thead>
 			  <tbody>
-			  	<tr>
+			  	<tr class="popup" link="/member/dashboard/cashin_history">
 			  		<td>March 2</td>
 			  		<td>Cash In</td>
 			  		<td>BDO</td>
@@ -293,7 +295,7 @@
 			  		<td>EUZXGK</td>
 			  		<td>Completed</td>
 			  	</tr>
-			  	<tr>
+			  	<tr class="popup" link="/member/dashboard/cashin_history">
 			  		<td>March 2</td>
 			  		<td>Cash In</td>
 			  		<td>BDO</td>
@@ -311,7 +313,7 @@
 		  	<div class="table-responsive border">
 			  <table class="table table-hover table-striped">
 			    <thead>
-			    <tr>
+			    <tr class="popup" link="/member/dashboard/cashout_history">
 			      <th scope="col">Date</th>
 			      <th scope="col">Description</th>
 			      <th scope="col">Value</th>
@@ -319,7 +321,7 @@
 			    </tr>
 			  </thead>
 			  <tbody>
-			  	<tr>
+			  	<tr class="popup" link="/member/dashboard/cashout_history">
 			  		<td>March 2</td>
 			  		<td>Cash Out via BPI</td>
 			  		<td>5 000.00</td>
@@ -351,7 +353,7 @@
 			    </tr>
 			  </thead>
 			  <tbody>
-			  	<tr>
+			  	<tr class="popup" link="/member/dashboard/conversion_history">
 			  		<td>March 2</td>
 			  		<td>ConvertI</td>
 			  		<td>ABA WALLET</td>
@@ -397,6 +399,7 @@
 		
 	}
 
+
 </script>
 
 {{-- Aba Wallet Conversion --}}
@@ -409,13 +412,13 @@
 	function changeColor1(){
 		abaToPesoConvert.classList.add("bg-convert");
 		abaToBtcConvert.classList.remove("bg-convert");
-		document.getElementById("abaConvertModal").innerHTML = '<a class="popup btn btn-block btn-convert" href="javascript:" link="/member/dashboard/aba_to_peso_conv" ><i class="fas fa-exchange-alt"></i> <span>|</span> CONVERT</a>';
+		document.getElementById("abaConvertModal").innerHTML = '<a class="popup btn btn-convert" href="javascript:" link="/member/dashboard/aba_to_peso_conv" ><i class="fas fa-exchange-alt"></i> <span>|</span> CONVERT</a> <a class="btn btn-send popup" href="javascript:" link="/member/dashboard/send_money_step_1" size="lg"><i class="far fa-arrow-alt-circle-right"></i> <span>|</span> SEND</a>';
 	}
 
 	function changeColor2(){
 		abaToPesoConvert.classList.remove("bg-convert");
 		abaToBtcConvert.classList.add("bg-convert");
-		document.getElementById("abaConvertModal").innerHTML = '<a class="popup btn btn-block btn-convert" href="javascript:" link="/member/dashboard/aba_to_btc_conv" ><i class="fas fa-exchange-alt"></i> <span>|</span> CONVERT</a>';
+		document.getElementById("abaConvertModal").innerHTML = '<a class="popup btn btn-convert" href="javascript:" link="/member/dashboard/aba_to_btc_conv" ><i class="fas fa-exchange-alt"></i> <span>|</span> CONVERT</a> <a class="btn btn-send popup" href="javascript:" link="/member/dashboard/send_money_step_1" size="lg"><i class="far fa-arrow-alt-circle-right"></i> <span>|</span> SEND</a>	';
 	}
 
 </script>
