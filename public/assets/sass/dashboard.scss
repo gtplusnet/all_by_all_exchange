@@ -69,230 +69,230 @@ $bold: 700;
 	}
 
 	//PESO WALLET
-	.peso-wallet
-	{
+	// .peso-wallet
+	// {
 
-		box-shadow: 1px 2px 2px rgba(0,0,0,0.1);
-		.top
-		{
-			.button-holder
-			{
-				flex-grow: 1;
-				text-align: right;
+	// 	box-shadow: 1px 2px 2px rgba(0,0,0,0.1);
+	// 	.top
+	// 	{
+	// 		.button-holder
+	// 		{
+	// 			flex-grow: 1;
+	// 			text-align: right;
 
-				.btn-wall-add
-				{
-					@include transition(0.3s);
-					text-decoration: none;
-					border-radius: 0;
-					border: 1px solid #daa215;
-					background-color: inherit;
-					color: #daa215;
-					font-family: $display-text;
-					font-size: 13px;
-					font-weight: $bold;
+	// 			.btn-wall-add
+	// 			{
+	// 				@include transition(0.3s);
+	// 				text-decoration: none;
+	// 				border-radius: 0;
+	// 				border: 1px solid #daa215;
+	// 				background-color: inherit;
+	// 				color: #daa215;
+	// 				font-family: $display-text;
+	// 				font-size: 13px;
+	// 				font-weight: $bold;
 
-					&:hover
-					{
-						background-color: #daa215;
-						color: #fff;
-					}
-				}
+	// 				&:hover
+	// 				{
+	// 					background-color: #daa215;
+	// 					color: #fff;
+	// 				}
+	// 			}
 
-				.btn-convert
-				{
-					@extend .btn-wall-add;
-				}
-			}
-		}
+	// 			.btn-convert
+	// 			{
+	// 				@extend .btn-wall-add;
+	// 			}
+	// 		}
+	// 	}
 
-		.bottom
-		{
-			@media screen and (max-width: 500px)
-			{
-				flex-wrap: wrap;
-			}
+	// 	.bottom
+	// 	{
+	// 		@media screen and (max-width: 500px)
+	// 		{
+	// 			flex-wrap: wrap;
+	// 		}
 
-			.peso-wallets
-			{
-				text-align: center;
-				//cursor: pointer;
-				//adding-bottom: 50px;
-				// margin: 50px;
-				border-bottom: 2px solid #fff;
+	// 		.peso-wallets
+	// 		{
+	// 			text-align: center;
+	// 			//cursor: pointer;
+	// 			//adding-bottom: 50px;
+	// 			// margin: 50px;
+	// 			border-bottom: 2px solid #fff;
 
-				.peso
-				{
-					color: #454545;
-				}
+	// 			.aba
+	// 			{
+	// 				color: #454545;
+	// 			}
 
-				.btc
-				{
-					color: #a4a4a4;
-				}
+	// 			.btc
+	// 			{
+	// 				color: #a4a4a4;
+	// 			}
 
-                .php
-                {
-                    @extend .btc;
-                }
+ //                .php
+ //                {
+ //                    @extend .btc;
+ //                }
 
-				.converted-price
-				{
-					font-family: $content-text;
-					font-weight: 400;
-					font-size: 30px;
-				}
+	// 			.converted-price
+	// 			{
+	// 				font-family: $content-text;
+	// 				font-weight: 400;
+	// 				font-size: 30px;
+	// 			}
 
-				.currency
-				{
-					font-family: $display-text;
-					font-weight: $bold;
-					font-size: 15px;
-					color: #daa215;
-				}
+	// 			.currency
+	// 			{
+	// 				font-family: $display-text;
+	// 				font-weight: $bold;
+	// 				font-size: 15px;
+	// 				color: #daa215;
+	// 			}
 
 
-				// &:hover
-				// {
-				// 	border-bottom: 2px solid #daa215;
-				// }
-			}
+	// 			// &:hover
+	// 			// {
+	// 			// 	border-bottom: 2px solid #daa215;
+	// 			// }
+	// 		}
 
-            .text-price
-			{
-				font-family: $content-text;
-				font-size: 30px; //40
-				font-weight: 400;
-				color: #daa215;
+ //            .text-price
+	// 		{
+	// 			font-family: $content-text;
+	// 			font-size: 30px; //40
+	// 			font-weight: 400;
+	// 			color: #daa215;
 
-				@media screen and (max-width: 500px)
-				{
-					font-size: 25px;
-				}
-			}
+	// 			@media screen and (max-width: 500px)
+	// 			{
+	// 				font-size: 25px;
+	// 			}
+	// 		}
 
-            .btn-container
-			{
-					.btn-request
-					{
-						@include transition(0.3s);
-						border-radius: 0;
-						background-color: #daa215;
-						border: 1px solid #daa215;
-						color: #fff;
-						min-width: 130px;
+ //            .btn-container
+	// 		{
+	// 				.btn-request
+	// 				{
+	// 					@include transition(0.3s);
+	// 					border-radius: 0;
+	// 					background-color: #daa215;
+	// 					border: 1px solid #daa215;
+	// 					color: #fff;
+	// 					min-width: 130px;
 
-						img
-						{
-							border-right: 1px solid #fff;
-							padding: 3px 5px;
-						}
+	// 					img
+	// 					{
+	// 						border-right: 1px solid #fff;
+	// 						padding: 3px 5px;
+	// 					}
 
-						&:hover
-						{
-							background-color: inherit;
-							color: #daa215;
-						}
-					}
+	// 					&:hover
+	// 					{
+	// 						background-color: inherit;
+	// 						color: #daa215;
+	// 					}
+	// 				}
 
-					.btn-send
-					{
-						margin-top: 10px;
-						@extend .btn-request;
-					}
+	// 				.btn-send
+	// 				{
+	// 					margin-top: 10px;
+	// 					@extend .btn-request;
+	// 				}
 
-					@media screen and (max-width: 500px)
-					{
-						margin-top: 10px;
+	// 				@media screen and (max-width: 500px)
+	// 				{
+	// 					margin-top: 10px;
 
-						.btn-request
-						{
-							width: 100%;
-						}
+	// 					.btn-request
+	// 					{
+	// 						width: 100%;
+	// 					}
 
-						.btn-send
-						{
-							width: 100%;
-						}
-					}
-				}
+	// 					.btn-send
+	// 					{
+	// 						width: 100%;
+	// 					}
+	// 				}
+	// 			}
 
-			.left
-			{
-				flex-basis: 500px;
-				text-align: center;
+	// 		.left
+	// 		{
+	// 			flex-basis: 500px;
+	// 			text-align: center;
 
-				.text-price
-				{
-					font-family: $content-text;
-					font-size: 40px;
-					font-weight: 400;
-					color: #daa215;
+	// 			.text-price
+	// 			{
+	// 				font-family: $content-text;
+	// 				font-size: 40px;
+	// 				font-weight: 400;
+	// 				color: #daa215;
 
-					@media screen and (max-width: 500px)
-					{
-						font-size: 25px;
-					}
-				}
-			}
+	// 				@media screen and (max-width: 500px)
+	// 				{
+	// 					font-size: 25px;
+	// 				}
+	// 			}
+	// 		}
 
-			.right
-			{
-				flex-basis: 500px;
+	// 		.right
+	// 		{
+	// 			flex-basis: 500px;
 
-				.btn-container
-				{
-					.btn-request
-					{
-						@include transition(0.3s);
-						border-radius: 0;
-						background-color: #daa215;
-						border: 1px solid #daa215;
-						color: #fff;
-						min-width: 130px;
+	// 			.btn-container
+	// 			{
+	// 				.btn-request
+	// 				{
+	// 					@include transition(0.3s);
+	// 					border-radius: 0;
+	// 					background-color: #daa215;
+	// 					border: 1px solid #daa215;
+	// 					color: #fff;
+	// 					min-width: 130px;
 
-						img
-						{
-							border-right: 1px solid #fff;
-							padding: 3px 5px;
-						}
+	// 					img
+	// 					{
+	// 						border-right: 1px solid #fff;
+	// 						padding: 3px 5px;
+	// 					}
 
-						&:hover
-						{
-							background-color: inherit;
-							color: #daa215;
-						}
-					}
+	// 					&:hover
+	// 					{
+	// 						background-color: inherit;
+	// 						color: #daa215;
+	// 					}
+	// 				}
 
-					.btn-send
-					{
-						margin-top: 10px;
-						@extend .btn-request;
-					}
+	// 				.btn-send
+	// 				{
+	// 					margin-top: 10px;
+	// 					@extend .btn-request;
+	// 				}
 
-					@media screen and (max-width: 500px)
-					{
-						margin-top: 10px;
+	// 				@media screen and (max-width: 500px)
+	// 				{
+	// 					margin-top: 10px;
 
-						.btn-request
-						{
-							width: 100%;
-						}
+	// 					.btn-request
+	// 					{
+	// 						width: 100%;
+	// 					}
 
-						.btn-send
-						{
-							width: 100%;
-						}
-					}
-				}
+	// 					.btn-send
+	// 					{
+	// 						width: 100%;
+	// 					}
+	// 				}
+	// 			}
 
-			}
-		}
-	}
+	// 		}
+	// 	}
+	// }
 
 
     //ABA WALLET
-	.aba-wallet
+	.wallet
 	{
 		box-shadow: 1px 2px 2px rgba(0,0,0,0.1);
 
@@ -329,7 +329,7 @@ $bold: 700;
 				flex-wrap: wrap;
 			}
 
-			.aba-wallets
+			.wallets
 			{
 				text-align: center;
 				//cursor: pointer;
@@ -382,84 +382,84 @@ $bold: 700;
 	}
 
 	//BITCOIN WALLET
-	.bitcoin-wallet
-	{
-		box-shadow: 1px 2px 2px rgba(0,0,0,0.1);
-		.top
-		{
-			.btn-convert
-			{
-				@include transition(0.3s);
-				text-decoration: none;
-				border-radius: 0;
-				border: 1px solid #daa215;
-				background-color: inherit;
-				color: #daa215;
-				font-family: $display-text;
-				font-size: 13px;
-				font-weight: $bold;
+	// .bitcoin-wallet
+	// {
+	// 	box-shadow: 1px 2px 2px rgba(0,0,0,0.1);
+	// 	.top
+	// 	{
+	// 		.btn-convert
+	// 		{
+	// 			@include transition(0.3s);
+	// 			text-decoration: none;
+	// 			border-radius: 0;
+	// 			border: 1px solid #daa215;
+	// 			background-color: inherit;
+	// 			color: #daa215;
+	// 			font-family: $display-text;
+	// 			font-size: 13px;
+	// 			font-weight: $bold;
 
-				&:hover
-				{
-					background-color: #daa215;
-					color: #fff;
-				}
-			}
-		}
+	// 			&:hover
+	// 			{
+	// 				background-color: #daa215;
+	// 				color: #fff;
+	// 			}
+	// 		}
+	// 	}
 
-		.bottom
-		{
-			// margin: -50px;
-			overflow-x: hidden;
+	// 	.bottom
+	// 	{
+	// 		// margin: -50px;
+	// 		overflow-x: hidden;
 
-			@media screen and (max-width: 500px)
-			{
-				flex-wrap: wrap;
-			}
+	// 		@media screen and (max-width: 500px)
+	// 		{
+	// 			flex-wrap: wrap;
+	// 		}
 
-			.all-wallets
-			{
-				text-align: center;
-				//cursor: pointer;
-				//adding-bottom: 50px;
-				// margin: 50px;
-				border-bottom: 2px solid #fff;
+	// 		.all-wallets
+	// 		{
+	// 			text-align: center;
+	// 			//cursor: pointer;
+	// 			//adding-bottom: 50px;
+	// 			// margin: 50px;
+	// 			border-bottom: 2px solid #fff;
 
-				.php
-				{
-					color: #a4a4a4;
-				}
+	// 			.php
+	// 			{
+	// 				color: #a4a4a4;
+	// 			}
 
-				.btc
-				{
-					color: #454545;
-				}
+	// 			.btc
+	// 			{
+	// 				color: #454545;
+	// 			}
 
-				.converted-price
-				{
-					font-family: $content-text;
-					font-weight: 400;
-					font-size: 30px;
-				}
+	// 			.converted-price
+	// 			{
+	// 				font-family: $content-text;
+	// 				font-weight: 400;
+	// 				font-size: 30px;
+	// 			}
 
-				.currency
-				{
-					font-family: $display-text;
-					font-weight: $bold;
-					font-size: 15px;
-					color: #daa215;
-				}
+	// 			.currency
+	// 			{
+	// 				font-family: $display-text;
+	// 				font-weight: $bold;
+	// 				font-size: 15px;
+	// 				color: #daa215;
+	// 			}
 
-				// &:hover
-				// {
-				// 	border-bottom: 2px solid #daa215;
-				// }
-			}
+	// 			// &:hover
+	// 			// {
+	// 			// 	border-bottom: 2px solid #daa215;
+	// 			// }
+	// 		}
 
 
-		}
+	// 	}
 
-	}
+	// }
 
 	//FOOTER BUTTONS
 	.footer{

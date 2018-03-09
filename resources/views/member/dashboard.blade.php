@@ -11,24 +11,36 @@
 
 		<div class="col-md-4">
 			<!--PESO AND WALLET-->
-			<div class="holder peso-wallet match-height">
+			<div class="holder wallet match-height">
 				<div class="top">
 					<div class="holder-title">PESO WALLET</div>
 					<div class="button-holder">
-						<button  href="javascript:" class="popup xbtn outline-btn xbtn-sm" link="/member/dashboard/peso_walletaddress" size="md" id="pesoWalletAddressBtn" {{-- data-toggle="modal" data-target="#pesoWalletModal" --}}>WALLET ADDRESS <i class="fas fa-qrcode ml-2"></i></button>
+						<button  href="javascript:" class="popup xbtn outline-btn xbtn-sm" link="/member/dashboard/peso_walletaddress" size="md">WALLET ADDRESS <i class="fas fa-qrcode ml-2"></i></button>
 					</div>
 				</div>
 				<div class="bottom d-flex flex-column align-items-center justify-content-center">
-						<div class="peso-wallets d-flex flex-column justify-content-center">
+						<div class="wallets d-flex flex-column justify-content-center">
 							<div class="converted-price peso">PHP 0.00</div>
 							<div class="currency">CURRENT PESO WALLET</div>
+						</div>
+						<div class="wallets mt-3" style="min-width: 80%;">
+							<div class="d-flex justify-content-between flex-row border pt-2" id="phpToAba">
+								<div class="col currency text-left" ><h5>ABA</h5></div>
+							<div class="col converted-price btc"><h5>0.000000</h5></div>
+							</div>
+						</div>
+						<div class="wallets" style="min-width: 80%;">
+							<div class="d-flex justify-content-between flex-row border pt-2" id="phpToBtc">
+								<div class="col currency text-left" ><h5>BTC</h5></div>
+							<div class="col converted-price btc"><h5>0.000000</h5></div>
+							</div>
 						</div>
 						
 					</div>
 				</div>
 				<div class="footer">
 					<div class="btn-container mt-1 d-flex flex-lg-row flex-column align-items-stretch justify-content-between">
-						<button class="xbtn outline-i-btn popup" href="javascript:" link="/member/dashboard/peso_to_aba_conv"><i class="fas fa-exchange-alt"></i> <span>|</span> CONVERT</button>
+						<button class="xbtn outline-i-btn popup" href="javascript:" link="/member/dashboard/wallet_conversion"><i class="fas fa-exchange-alt"></i> <span>|</span> CONVERT</button>
 						<button class="xbtn outline-i-btn popup" href="javascript:" link="/member/dashboard/send_money_step_1" size="lg"><i class="far fa-arrow-alt-circle-right"></i> <span>|</span> SEND</button>
 					</div>
 				</div>
@@ -36,38 +48,36 @@
 
 			<div class="col-md-4">
 				{{-- ABA WALLET --}}
-				<div class="holder aba-wallet match-height">
-					<div class="top">
-						<div class="holder-title">ABA WALLET</div>
-						<div class="button-holder">
-							<button  href="javascript:" class="popup xbtn outline-btn xbtn-sm" link="/member/dashboard/aba_walletaddress" size="md">WALLET ADDRESS <i class="fas fa-qrcode ml-2"></i></button>
-						</div>
+				<div class="holder wallet match-height">
+				<div class="top">
+					<div class="holder-title">ABA WALLET</div>
+					<div class="button-holder">
+						<button  href="javascript:" class="popup xbtn outline-btn xbtn-sm" link="/member/dashboard/aba_walletaddress" size="md">WALLET ADDRESS <i class="fas fa-qrcode ml-2"></i></button>
 					</div>
-					<div class="bottom d-flex flex-column align-items-center justify-content-center">
-						<div class="aba-wallets d-flex flex-column justify-content-center">
-							<div class="converted-price aba">ABA 0.00</div>
+				</div>
+				<div class="bottom d-flex flex-column align-items-center justify-content-center">
+						<div class="wallets d-flex flex-column justify-content-center">
+							<div class="converted-price peso">ABA 0.00</div>
 							<div class="currency">CURRENT ABA WALLET</div>
 						</div>
-						<div class="aba-wallets mt-3" style="min-width: 80%;">
-							<div class="d-flex justify-content-between flex-row border pt-2" id="abaToBtcConvert">
-								<div class="col currency text-left" ><h5  class="" style="cursor: pointer;">BITCOIN</h5></div>
+						<div class="wallets mt-3" style="min-width: 80%;">
+							<div class="d-flex justify-content-between flex-row border pt-2" id="abaToBtc">
+								<div class="col currency text-left" ><h5>BTC</h5></div>
 							<div class="col converted-price btc"><h5>0.000000</h5></div>
 							</div>
 						</div>
-						<div class="aba-wallets" style="min-width: 80%;">
-							<div class="d-flex justify-content-between flex-row border pt-2" id="abaToPesoConvert">
-								<div class="col currency text-left" ><h5  style="cursor: pointer;">PESO</h5></div>
+						<div class="wallets" style="min-width: 80%;">
+							<div class="d-flex justify-content-between flex-row border pt-2" id="abaToPhp">
+								<div class="col currency text-left" ><h5>PHP</h5></div>
 							<div class="col converted-price btc"><h5>0.000000</h5></div>
 							</div>
 						</div>
-
+						
 					</div>
-					
-					
 				</div>
 				<div class="footer">
 					<div class="btn-container mt-1 d-flex flex-lg-row flex-column align-items-center justify-content-between" id="abaConvertModal">
-						<button class="xbtn outline-i-btn popup" href="javascript:" link="/member/dashboard/aba_to_btc_conv" ><i class="fas fa-exchange-alt"></i> <span>|</span> CONVERT</button>
+						<button class="xbtn outline-i-btn popup" href="javascript:" link="/member/dashboard/wallet_conversion" ><i class="fas fa-exchange-alt"></i> <span>|</span> CONVERT</button>
 						<button class="xbtn outline-i-btn popup" href="javascript:" link="/member/dashboard/send_money_step_1" size="lg"><i class="far fa-arrow-alt-circle-right"></i> <span>|</span> SEND</button>
 					</div>
 
@@ -76,31 +86,36 @@
 
 			<div class="col-md-4">
 				{{-- BITCOIN WALLET --}}
-				<div class="holder aba-wallet match-height">
-					<div class="top">
-						<div class="holder-title">BITCOIN WALLET</div>
-						<div class="button-holder">
-							<button  href="javascript:" class="popup xbtn outline-btn xbtn-sm" link="/member/dashboard/btc_walletaddress" size="md">WALLET ADDRESS <i class="fas fa-qrcode ml-2"></i></i></button>
-						</div>
+				<div class="holder wallet match-height">
+				<div class="top">
+					<div class="holder-title">BTC WALLET</div>
+					<div class="button-holder">
+						<button  href="javascript:" class="popup xbtn outline-btn xbtn-sm" link="/member/dashboard/btc_walletaddress" size="md">WALLET ADDRESS <i class="fas fa-qrcode ml-2"></i></button>
 					</div>
-					<div class="bottom d-flex flex-column align-items-center justify-content-center">
-						<div class="aba-wallets d-flex flex-column justify-content-center">
-							<div class="converted-price aba">BTC 0.000000</div>
+				</div>
+				<div class="bottom d-flex flex-column align-items-center justify-content-center">
+						<div class="wallets d-flex flex-column justify-content-center">
+							<div class="converted-price peso">BTC 0.00</div>
 							<div class="currency">CURRENT BTC WALLET</div>
 						</div>
-						{{-- <div class="aba-wallets mt-3" style="min-width: 80%;">
-							<div class="d-flex justify-content-between flex-row border pt-2">
-								<div class="col currency text-left" ><h5 id="btcToAbaConvert">ABA</h5></div>
+						<div class="wallets mt-3" style="min-width: 80%;">
+							<div class="d-flex justify-content-between flex-row border pt-2" id="btcToAba">
+								<div class="col currency text-left" ><h5  class="">ABA</h5></div>
 							<div class="col converted-price btc"><h5>0.000000</h5></div>
 							</div>
-						</div> --}}
-
+						</div>
+						<div class="wallets" style="min-width: 80%;">
+							<div class="d-flex justify-content-between flex-row border pt-2" id="btcToPhp">
+								<div class="col currency text-left" ><h5>PHP</h5></div>
+							<div class="col converted-price btc"><h5>0.000000</h5></div>
+							</div>
+						</div>
+						
 					</div>
-					
 				</div>
 				<div class="footer">
 					<div class="btn-container mt-1 d-flex  flex-column align-items-center justify-content-center">
-						<button class="xbtn outline-i-btn popup" href="javascript:" link="/member/dashboard/btc_to_aba_conv"><i class="fas fa-exchange-alt"></i> <span>|</span> CONVERT</button>
+						<button class="xbtn outline-i-btn popup" href="javascript:" link="/member/dashboard/wallet_conversion"><i class="fas fa-exchange-alt"></i> <span>|</span> CONVERT</button>
 					</div>
 				</div>
 			</div>
@@ -402,24 +417,36 @@
 
 </script>
 
-{{-- Aba Wallet Conversion --}}
+{{-- Wallet Conversion --}}
  <script>
-	var abaToPesoConvert = document.getElementById("abaToPesoConvert");
-	var abaToBtcConvert = document.getElementById("abaToBtcConvert");
+// var convertWalletFromLabel = document.getElementById("convertWalletFromLabel");
+// var convertWalletFromInput = document.getElementById("convertWalletFromInput"); 
+// var convertWalletFrom = document.getElementById("convertWalletFrom"); 
+// var convertWalletToInput = document.getElementById("convertWalletToInput"); 
+// var convertWalletTo = document.getElementById("convertWalletTo"); 
+// var convertWalletFromBalanceLabel = document.getElementById("convertWalletFromBalanceLabel"); 
+// var convertWalletFromRateLabel = document.getElementById("convertWalletFromRateLabel"); 
+// var convertWalletToRateLabel = document.getElementById("convertWalletToRateLabel");
 
-	abaToPesoConvert.addEventListener('click', changeColor1);
-	abaToBtcConvert.addEventListener('click', changeColor2);
-	function changeColor1(){
-		abaToPesoConvert.classList.add("bg-convert");
-		abaToBtcConvert.classList.remove("bg-convert");
-		document.getElementById("abaConvertModal").innerHTML = '<button class="xbtn outline-i-btn popup" href="javascript:" link="/member/dashboard/aba_to_peso_conv" ><i class="fas fa-exchange-alt"></i> <span>|</span> CONVERT</button><button class="xbtn outline-i-btn popup" href="javascript:" link="/member/dashboard/send_money_step_1" size="lg"><i class="far fa-arrow-alt-circle-right"></i> <span>|</span> SEND</button>';
-	}
 
-	function changeColor2(){
-		abaToPesoConvert.classList.remove("bg-convert");
-		abaToBtcConvert.classList.add("bg-convert");
-		document.getElementById("abaConvertModal").innerHTML = '<button class="xbtn outline-i-btn popup" href="javascript:" link="/member/dashboard/aba_to_btc_conv" ><i class="fas fa-exchange-alt"></i> <span>|</span> CONVERT</button><button class="xbtn outline-i-btn popup" href="javascript:" link="/member/dashboard/send_money_step_1" size="lg"><i class="far fa-arrow-alt-circle-right"></i> <span>|</span> SEND</button>';
-	}
+// $(document).ready(function(){
+// 	function showFromWallet(e){
+
+// 	$("#convertWalletFromLabel").text(e.target.value);
+
+// 	// if(e.target.value == "BTC"){
+// 	// 	convertWalletTo.remove
+// 	// }
+
+
+// }
+
+// function showToWallet(e){
+
+// }
+
+// });
+	
 
 </script>
 

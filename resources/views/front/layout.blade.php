@@ -130,11 +130,16 @@ $(document).ready(function(){
 		$("#step_2").removeClass("d-none");
 	});
 
-	$("cashout_complete").on('click', function(){
+	$("#cashout_complete").on('click', function(){
 		$("#step_3").addClass("d-none");
 		$("#step_4").removeClass("d-none");
 	});
+
+	
 });
+</script>
+<script>
+
 </script>
 
 	@yield("js")

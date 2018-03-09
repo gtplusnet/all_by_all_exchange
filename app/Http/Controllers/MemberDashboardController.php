@@ -32,29 +32,41 @@ class MemberDashboardController extends Controller
     	return view ("member.popups.btc_walletaddress", $data);
     }
 
-    public function aba_to_btc_conv()
-    {
-    	$data["page"] = "Aba to Btc Conversion";
-    	return view ("member.popups.aba_to_btc_conv", $data);
-    }
+    // public function aba_to_btc_conv()
+    // {
+    // 	$data["page"] = "Aba to Btc Conversion";
+    // 	return view ("member.popups.aba_to_btc_conv", $data);
+    // }
 
-     public function aba_to_peso_conv()
-    {
-        $data["page"] = "Aba to Peso Conversion";
-        return view ("member.popups.aba_to_peso_conv", $data);
-    }
+    //  public function aba_to_peso_conv()
+    // {
+    //     $data["page"] = "Aba to Peso Conversion";
+    //     return view ("member.popups.aba_to_peso_conv", $data);
+    // }
 
-    public function btc_to_aba_conv()
-    {
-    	$data["page"] = "Btc to Peso Conversion";
-    	return view ("member.popups.btc_to_aba_conv", $data);
-    }
+    // public function btc_to_aba_conv()
+    // {
+    //     $data["page"] = "Btc to Aba Conversion";
+    //     return view ("member.popups.btc_to_aba_conv", $data);
+    // }
 
-    public function peso_to_aba_conv()
-    {
-        $data["page"] = "Peso to Aba Conversion";
-        return view ("member.popups.peso_to_aba_conv", $data);
-    }
+    // public function btc_to_php_conv()
+    // {
+    //     $data["page"] = "Btc to Peso Conversion";
+    //     return view ("member.popups.btc_to_php_conv", $data);
+    // }
+
+    // public function peso_to_aba_conv()
+    // {
+    //     $data["page"] = "Peso to Aba Conversion";
+    //     return view ("member.popups.peso_to_aba_conv", $data);
+    // }
+
+    // public function peso_to_btc_conv()
+    // {
+    //     $data["page"] = "Peso to Btc Conversion";
+    //     return view ("member.popups.peso_to_btc_conv", $data);
+    // }
 
     public function send_money_step_1()
     {
@@ -114,6 +126,12 @@ class MemberDashboardController extends Controller
     {
         $data["page"] = "Cash Out History";
         return view ("member.popups.cashout_history", $data);
+    }
+
+    public function wallet_conversion()
+    {
+        $data["page"] = "Wallet Conversion";
+        return view ("member.popups.wallet_conversion", $data);
     }
 
     public function conversion_success()
