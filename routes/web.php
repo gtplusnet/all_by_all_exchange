@@ -42,3 +42,4 @@ Route::get('/member/dashboard/sending_transactions', 		'MemberDashboardControlle
 Route::get('/member/dashboard/receiving_transactions', 		'MemberDashboardController@receiving_transactions');
 Route::get('/member/dashboard/cashin_history', 		'MemberDashboardController@cashin_history');
 Route::get('/member/dashboard/cashout_history', 		'MemberDashboardController@cashout_history');
+Route::get('/member/dashboard/conversion_success', 		'MemberDashboardController@conversion_success');

@@ -115,3 +115,123 @@ footer
         bottom: 58px;
     }
 }
+
+button{
+    &:focus{
+        outline: 0;
+    }
+}
+.xbtn{
+    position: relative;
+    top: 0;
+    margin: 5px 2px;    
+    user-select: none;
+    cursor: pointer;
+    min-width: 100px;
+    width: 100%;
+    height: 45px;
+    color: #fff;
+    background: #888;
+    border: 0;
+    transition: 100ms;
+    padding: 0px 20px;
+
+}
+
+.td-btn{
+    border-radius: 3px;
+    background: #DAA215;
+    box-shadow: 0px 5px #af8211;
+    &:hover{
+        box-shadow: 0px 3px #af8211;
+        top: 2px;
+        transition: 200ms;
+    }
+    &:active{
+        box-shadow: 0px 1px #af8211;
+        top: 4px;
+        transition: 200ms;
+    }
+}
+
+.xbtn-sm{
+    min-width: 70px;
+    max-width: 100%;
+    height: 35px;
+    padding: 0px 10px;
+    
+}
+
+.outline-btn{
+    font-size: 13px;
+     @media screen and (max-width: 768px){
+        font-size: 11px;
+    }
+    @media screen and (max-width: 992px){
+        font-size: 11px;
+    }
+    font-weight: bold;
+    color: #DAA215;
+    background: rgba(0,0,0,0);
+    border: 1px solid #DAA215;
+    box-shadow: 0px 1px #af8211;
+    transition: 400ms;
+    &:hover{
+        color: #fff;
+        top: 0;
+        background: #DAA215;
+        transition: 400ms;
+    }
+    &:active{
+        color: #fff;
+        top: 0;
+        background: #DAA215;
+        box-shadow: 0px 0px #fff;
+        transition: 400ms;
+    }
+}
+
+.outline-i-btn{
+    font-size: 16px;
+
+    color: #fff;
+    background: #DAA215;
+    border: 1px solid #DAA215;
+    box-shadow: 0px 1px #af8211;
+    transition: 400ms;
+    &:hover{
+        color: #DAA215;
+        top: 0;
+        background: rgba(255,255,255,0);
+        transition: 400ms;
+    }
+    &:active{
+        color: #fff;
+        top: 0;
+        background: #DAA215;
+        box-shadow: 0px 0px #fff;
+        transition: 400ms;
+    }
+}
+
+
+.d-50{
+    width: 30%;
+    margin: auto;
+}
+
+.d-70{
+    width: 70%;
+    margin: auto;
+}
+
+.d-80{
+    width: 80%;
+    margin: auto;
+}
+
+.d-100{
+    width: 100%;
+    margin: auto;
+}
+

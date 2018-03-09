@@ -40,14 +40,18 @@
         		</div>
         	</li>
         </ul>
-        <div class="text-center">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-        <button type="button" class="btn btn-warning popup" link="/member/dashboard/send_money_step_3" size="md">Convert</button>
+        <div class="text-center d-flex flex-row justify-content-center">
+            <div class="col">
+                <button class="xbtn outline-btn xbtn-sm d-70" data-dismiss="modal">CANCEL</button>
+            </div>
+            <div class="col">
+                <button class="xbtn outline-btn popup xbtn-sm d-70" href="javascript:" link="/member/dashboard/conversion_success" >CONVERT</button>
+            </div>
+        </div>
         <div class="alert alert-warning p-2 my-3 mx-2">
             <small>
-            	Please keep in mind that the prices of digital currencies are volatile. Prices may go up or down at any time.
+                Please keep in mind that the prices of digital currencies are volatile. Prices may go up or down at any time.
             </small>
-        </div>
         </div>
       </div>
 </div>

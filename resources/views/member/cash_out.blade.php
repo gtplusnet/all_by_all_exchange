@@ -50,7 +50,11 @@
 						<small class="text-muted d-block my-3">
 							If account is based outside Metro Manila, deposit fees may be applied by the bank.
 						</small>
-						<div class="line-btn-y" id="step1_next">NEXT</div>
+						<div class="text-center d-flex flex-row justify-content-center mt-2">
+            <div class="col">
+                <button class="xbtn outline-btn xbtn-sm d-70" id="step1_next" >NEXT</button>
+            </div>
+        </div>
 					</div>
 
 					{{-- STEP 2 --}}
@@ -83,8 +87,14 @@
                 	</tr>
                 </table>
                 <div class="d-flex flex-row justify-content-center">
-                <div class="col"><div class="line-btn-y" id="step2_back">BACK</div></div>
-                <div class="col"><div class="line-btn-y" id="step2_next">NEXT</div></div>
+                <div class="text-center d-flex flex-row justify-content-center mt-2">
+                	<div class="col">
+                <button class="xbtn outline-btn xbtn-sm d-70" id="step2_back" >BACK</button>
+            </div>
+            <div class="col">
+                <button class="xbtn outline-btn xbtn-sm d-70" id="step2_next" >NEXT</button>
+            </div>
+        </div>
                 </div>
                 
 						
@@ -119,10 +129,14 @@
                 		<td><h6 style="font-size: 13px;">-</h6></td>
                 	</tr>
                 </table>
-                <div class="d-flex flex-row justify-content-centerx`">
-                <div class="col"><div class="line-btn-y" id="step3_back">BACK</div></div>
-                <div class="col"><div class="line-btn-y popup" id="step3_complete" link="/member/dashboard/cashout_complete_payment" size="md">COMPLETE PAYMENT</div></div>
-                </div>
+                <div class="text-center d-flex flex-row justify-content-center mt-2">
+                	<div class="col">
+                <button class="xbtn outline-btn xbtn-sm d-80" id="step3_back" >BACK</button>
+            </div>
+            <div class="col">
+                <button class="xbtn outline-btn xbtn-sm d-80 popup" id="step3_complete" link="/member/dashboard/cashout_complete_payment" size="md">COMPLETE PAYMENT</button>
+            </div>
+        </div>
                 
 						
 					</div>

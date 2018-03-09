@@ -25,18 +25,25 @@
      
      
      <textarea name="" id="" cols="30" rows="5" class="form-control mb-2" placeholder="Remarks Here"></textarea>
-     <button class="btn btn-primary" data-dismiss="modal">Edit Transaction</button>
+     <button class="xbtn outline-i-btn xbtn-sm d-50" data-dismiss="modal">Edit Transaction</button>
    </div>
  </div>
- <div class="text-center">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-        <button type="button" class="popup btn btn-warning" link="/member/dashboard/send_money_step_3" size="md" href="javascript:">Send</button>
-        <div class="alert alert-warning p-2 my-3 mx-2">
+
+<div class="d-flex flex-row justify-content-center">
+                <div class="text-center d-flex flex-row justify-content-center mt-2">
+                  <div class="col d-sm-block">
+                <button class="xbtn outline-btn xbtn-sm d-70" data-dismiss="modal" >CANCEL</button>
+            </div>
+            <div class="col">
+                <button class="xbtn outline-btn xbtn-sm d-70 popup" link="/member/dashboard/send_money_step_3" size="md" >SEND</button>
+            </div>
+        </div>
+                </div>
+
+ <div class="alert alert-warning p-2 my-3 mx-2">
           <small>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, necessitatibus molestias harum nisi doloremque voluptas.
           </small>
         </div>
-</div>
- 
 </div>
 </div>

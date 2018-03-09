@@ -15,7 +15,7 @@
 				<div class="top">
 					<div class="holder-title">PESO WALLET</div>
 					<div class="button-holder">
-						<a  href="javascript:" class="popup btn btn-wall-add" link="/member/dashboard/peso_walletaddress" size="md" id="pesoWalletAddressBtn" {{-- data-toggle="modal" data-target="#pesoWalletModal" --}}>WALLET ADDRESS <i class="fas fa-qrcode ml-2"></i></a>
+						<button  href="javascript:" class="popup xbtn outline-btn xbtn-sm" link="/member/dashboard/peso_walletaddress" size="md" id="pesoWalletAddressBtn" {{-- data-toggle="modal" data-target="#pesoWalletModal" --}}>WALLET ADDRESS <i class="fas fa-qrcode ml-2"></i></button>
 					</div>
 				</div>
 				<div class="bottom d-flex flex-column align-items-center justify-content-center">
@@ -27,9 +27,9 @@
 					</div>
 				</div>
 				<div class="footer">
-					<div class="btn-container mt-2 d-flex flex-row align-items-stretch justify-content-between">
-						<a class="btn btn-sm-block btn-send popup" href="javascript:" link="/member/dashboard/peso_to_aba_conv"><i class="fas fa-exchange-alt"></i> <span>|</span> CONVERT</a>
-						<a class="btn btn-sm-block btn-send popup" href="javascript:" link="/member/dashboard/send_money_step_1" size="lg"><i class="far fa-arrow-alt-circle-right"></i> <span>|</span> SEND</a>
+					<div class="btn-container mt-1 d-flex flex-lg-row flex-column align-items-stretch justify-content-between">
+						<button class="xbtn outline-i-btn popup" href="javascript:" link="/member/dashboard/peso_to_aba_conv"><i class="fas fa-exchange-alt"></i> <span>|</span> CONVERT</button>
+						<button class="xbtn outline-i-btn popup" href="javascript:" link="/member/dashboard/send_money_step_1" size="lg"><i class="far fa-arrow-alt-circle-right"></i> <span>|</span> SEND</button>
 					</div>
 				</div>
 			</div>
@@ -40,7 +40,7 @@
 					<div class="top">
 						<div class="holder-title">ABA WALLET</div>
 						<div class="button-holder">
-							<a class="popup btn btn-convert" href="javascript:" id="abaWalletAddressBtn" link="/member/dashboard/aba_walletaddress" size="md">WALLET ADDRESS <i class="fas fa-qrcode ml-2"></i></a>
+							<button  href="javascript:" class="popup xbtn outline-btn xbtn-sm" link="/member/dashboard/aba_walletaddress" size="md">WALLET ADDRESS <i class="fas fa-qrcode ml-2"></i></button>
 						</div>
 					</div>
 					<div class="bottom d-flex flex-column align-items-center justify-content-center">
@@ -66,9 +66,9 @@
 					
 				</div>
 				<div class="footer">
-					<div class="btn-container mt-2 d-flex flex-row align-items-center justify-content-between" id="abaConvertModal">
-						<a class="popup btn btn-convert" href="javascript:" link="/member/dashboard/aba_to_btc_conv" ><i class="fas fa-exchange-alt"></i> <span>|</span> CONVERT</a>
-						<a class="btn btn-send popup" href="javascript:" link="/member/dashboard/send_money_step_1" size="lg"><i class="far fa-arrow-alt-circle-right"></i> <span>|</span> SEND</a>
+					<div class="btn-container mt-1 d-flex flex-lg-row flex-column align-items-center justify-content-between" id="abaConvertModal">
+						<button class="xbtn outline-i-btn popup" href="javascript:" link="/member/dashboard/aba_to_btc_conv" ><i class="fas fa-exchange-alt"></i> <span>|</span> CONVERT</button>
+						<button class="xbtn outline-i-btn popup" href="javascript:" link="/member/dashboard/send_money_step_1" size="lg"><i class="far fa-arrow-alt-circle-right"></i> <span>|</span> SEND</button>
 					</div>
 
 				</div>
@@ -80,7 +80,7 @@
 					<div class="top">
 						<div class="holder-title">BITCOIN WALLET</div>
 						<div class="button-holder">
-							<a class="popup btn btn-convert" href="javascript:" link="/member/dashboard/btc_walletaddress" size="md">WALLET ADDRESS <i class="fas fa-qrcode ml-2"></i></i></a>
+							<button  href="javascript:" class="popup xbtn outline-btn xbtn-sm" link="/member/dashboard/btc_walletaddress" size="md">WALLET ADDRESS <i class="fas fa-qrcode ml-2"></i></i></button>
 						</div>
 					</div>
 					<div class="bottom d-flex flex-column align-items-center justify-content-center">
@@ -99,8 +99,8 @@
 					
 				</div>
 				<div class="footer">
-					<div class="btn-container mt-2 d-flex  flex-column align-items-center justify-content-center">
-						<a class="popup btn btn-block btn-convert" href="javascript:" link="/member/dashboard/btc_to_aba_conv"><i class="fas fa-exchange-alt"></i> <span>|</span> CONVERT</a>
+					<div class="btn-container mt-1 d-flex  flex-column align-items-center justify-content-center">
+						<button class="xbtn outline-i-btn popup" href="javascript:" link="/member/dashboard/btc_to_aba_conv"><i class="fas fa-exchange-alt"></i> <span>|</span> CONVERT</button>
 					</div>
 				</div>
 			</div>
@@ -412,13 +412,13 @@
 	function changeColor1(){
 		abaToPesoConvert.classList.add("bg-convert");
 		abaToBtcConvert.classList.remove("bg-convert");
-		document.getElementById("abaConvertModal").innerHTML = '<a class="popup btn btn-convert" href="javascript:" link="/member/dashboard/aba_to_peso_conv" ><i class="fas fa-exchange-alt"></i> <span>|</span> CONVERT</a> <a class="btn btn-send popup" href="javascript:" link="/member/dashboard/send_money_step_1" size="lg"><i class="far fa-arrow-alt-circle-right"></i> <span>|</span> SEND</a>';
+		document.getElementById("abaConvertModal").innerHTML = '<button class="xbtn outline-i-btn popup" href="javascript:" link="/member/dashboard/aba_to_peso_conv" ><i class="fas fa-exchange-alt"></i> <span>|</span> CONVERT</button><button class="xbtn outline-i-btn popup" href="javascript:" link="/member/dashboard/send_money_step_1" size="lg"><i class="far fa-arrow-alt-circle-right"></i> <span>|</span> SEND</button>';
 	}
 
 	function changeColor2(){
 		abaToPesoConvert.classList.remove("bg-convert");
 		abaToBtcConvert.classList.add("bg-convert");
-		document.getElementById("abaConvertModal").innerHTML = '<a class="popup btn btn-convert" href="javascript:" link="/member/dashboard/aba_to_btc_conv" ><i class="fas fa-exchange-alt"></i> <span>|</span> CONVERT</a> <a class="btn btn-send popup" href="javascript:" link="/member/dashboard/send_money_step_1" size="lg"><i class="far fa-arrow-alt-circle-right"></i> <span>|</span> SEND</a>	';
+		document.getElementById("abaConvertModal").innerHTML = '<button class="xbtn outline-i-btn popup" href="javascript:" link="/member/dashboard/aba_to_btc_conv" ><i class="fas fa-exchange-alt"></i> <span>|</span> CONVERT</button><button class="xbtn outline-i-btn popup" href="javascript:" link="/member/dashboard/send_money_step_1" size="lg"><i class="far fa-arrow-alt-circle-right"></i> <span>|</span> SEND</button>';
 	}
 
 </script>

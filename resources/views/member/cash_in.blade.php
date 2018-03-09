@@ -39,7 +39,11 @@
 						<select name="" id="" class="form-control mb-2">
 							<option value="BPI">BPI</option>
 						</select>
-						<div class="line-btn-y" id="step1_next">NEXT</div>
+						<div class="text-center d-flex flex-row justify-content-center mt-2">
+            <div class="col">
+                <button class="xbtn outline-btn xbtn-sm d-70" id="step1_next" >NEXT</button>
+            </div>
+        </div>
 					</div>
 
 					{{-- STEP 2 --}}
@@ -82,7 +86,11 @@
                 <small class="text-muted ">
                 	Noted: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore sit voluptas rem, ad exercitationem dignissimos.
                 </small>
-						<div class="line-btn-y mt-2 " id="step2_next">NEXT</div>
+						<div class="text-center d-flex flex-row justify-content-center mt-2">
+            <div class="col">
+                <button class="xbtn outline-btn xbtn-sm d-70" id="step2_next" >NEXT</button>
+            </div>
+        </div>
 					</div>
 
 					{{-- STEP 3 --}}
@@ -101,8 +109,14 @@
                 </div>
                 <small class="text-muted">Please ensure the amount and reference number match your order. Check deposits and payments through third-party agents and international wire transfer are not accepted.</small>
                  <small class="my-3 font-weight-bold d-block">1. After completing your payment, click on Mark as paid button.</small>
-                 <button class="btn btn-secondary btn-sm">Cancel Order</button>
-                 <button class="btn btn-warning btn-sm popup" link="/member/dashboard/cashin_mark_as_paid" size="lg">Mark as Paid</button>
+                 <div class="text-center d-flex flex-row justify-content-center my-2">
+            <div class="col">
+                <button class="xbtn outline-btn xbtn-sm d-80" data-dismiss="modal">CANCEL ORDER</button>
+            </div>
+            <div class="col">
+                <button class="xbtn outline-btn popup xbtn-sm d-80" href="javascript:" link="/member/dashboard/cashin_mark_as_paid" size="lg" >MARK AS PAID</button>
+            </div>
+        </div>
 
                 <table class="table table-striped mt-3 text-left table-bordered">
                 	<tr>

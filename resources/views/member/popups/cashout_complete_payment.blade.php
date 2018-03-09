@@ -43,7 +43,11 @@
         <input type="text" class="form-control" placeholder="" aria-label="0" aria-describedby="basic-addon2" id="transactionnumber">
         
       </div>
-      <button class="btn btn-warning" style="padding: 10px 30px;" id="cashout_complete" data-dismiss="modal">Pay</button>
+      <div class="text-center d-flex flex-row justify-content-center">
+            <div class="col">
+                <button class="xbtn outline-btn xbtn-sm d-70" data-dismiss="modal" >PAY</button>
+            </div>
+        </div>
         
         </div>
       </div>

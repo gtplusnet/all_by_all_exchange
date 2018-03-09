@@ -34,11 +34,20 @@
    </div>
  </div>
  <div class="d-flex flex-row align-items-end">
-  <div class="col text-center">
+  {{-- <div class="col text-center">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
         <button type="button" class="popup btn btn-warning" link="/member/dashboard/send_money_step_2" size="lg" href="javascript:">Continue</button>
         
-</div>
+</div> --}}
+                <div class="col text-center d-flex flex-row justify-content-center mt-2">
+                  <div class="col">
+                <button class="xbtn outline-btn xbtn-sm d-70" data-dismiss="modal" >CANCEL</button>
+            </div>
+            <div class="col">
+                <button class="xbtn outline-btn xbtn-sm d-70 popup" link="/member/dashboard/send_money_step_2" size="lg" >CONTINUE</button>
+            </div>
+        </div>
+
    <div class="col-lg-4">
      <h6>Audience:</h6>
       <select name="audienceDropdown" id="audienceDropdown"  class="form-control">

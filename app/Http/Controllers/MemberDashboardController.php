@@ -109,10 +109,17 @@ class MemberDashboardController extends Controller
         $data["page"] = "Cash Out History";
         return view ("member.popups.cashin_history", $data);
     }
+    
     public function cashout_history()
     {
         $data["page"] = "Cash Out History";
         return view ("member.popups.cashout_history", $data);
+    }
+
+    public function conversion_success()
+    {
+        $data["page"] = "Conversion Success";
+        return view ("member.popups.conversion_success", $data);
     }
 }
 
