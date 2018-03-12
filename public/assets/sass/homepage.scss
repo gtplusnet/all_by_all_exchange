@@ -1,0 +1,128 @@
+$ff: "Lato", sans-serif;
+
+body
+{
+    font-family: $ff;
+}
+//BANNER
+
+.banner-section
+{
+    background: url("/assets/img/login-cover4.jpg");
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+
+    h1
+    {
+        font-weight: 700;
+        font-family: $ff;
+        font-size: 60px;
+        color: #fff;
+
+        &:nth-child(2)
+        {
+            color: #daa215;
+        }
+    }
+
+    .card-text,
+    h4,
+    small
+    {
+        color: #fff;
+    }
+
+    hr
+    {
+        background-color: rgba(255,255,255,0.2);
+    }
+
+    .btn-warning
+    {
+        background: #daa215;
+        color: #fff;
+        width: 140px;
+
+        &:hover
+        {
+            background: #daa100;
+        }
+    }
+
+    .small-txt-div
+    {
+        line-height: 1em;
+
+        small
+        {
+            color: #6693b1;
+            font-size: 13px;
+        }
+    }
+
+    .curex-box
+    {
+        background-color: rgba(255,255,255,0.1);
+        border: 1px solid #fff;
+    }
+}
+//SECTION SAME SIZE
+
+.page-section
+{
+    //height: 200px auto;
+    padding: 70px 0;
+}
+//WHO ARE WE
+
+.waw-section
+{
+    background: #eee;
+    display: flex;
+
+    img
+    {
+        align-self: center;
+    }
+
+    .section-text
+    {
+        align-self: center;
+        padding: 10px 0;
+
+        p
+        {
+            color: #999;
+        }
+    }
+}
+
+
+//CONTACT
+
+.contact-section
+{
+    background: #050F1B;
+    display: flex;
+    color: #fff;
+
+    .section-text
+    {
+        padding: 10px 0;
+
+        p
+        {
+            color: #ddd;
+        }
+    }
+}$ff: "Lato", sans-serif;
+
+body
+{
+    font-family: $ff;
+}
+

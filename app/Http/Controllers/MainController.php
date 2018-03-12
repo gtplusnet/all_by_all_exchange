@@ -7,10 +7,16 @@ use App\Http\Requests;
 
 class MainController extends Controller
 {
-	public function index()
+	// public function index()
+ //    {
+	//     $data["Page"] = "Home";
+ //        return view ("front.home");
+ //    }
+
+    public function index()
     {
-	    $data["Page"] = "Home";
-        return view ("front.home");
+        $data["Page"] = "Homepage";
+        return view ("front.homepage");
     }
 
     public function signup()
