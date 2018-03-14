@@ -107,7 +107,7 @@
 					<h2 class="display-3">About Us</h2>
 					<p class="my-4"><strong class="lead">All by all</strong> is a blockchain coin that is recorded and stored in a public distributed ledger secured by cryptographic protocol that can be used for peer to peer transaction, decentralized and without central authorities
 					intervention. The blockchain is secured but traceable in the network.</p>
-					<a role="button" class="btn badge-pill btn-success" href="https://drive.google.com/open?id=1_BP1Iva5KVfP2h8BCONILvJGfsOh2bRe" target="_blank">WHITE PAPER &nbsp;<i class="fas fa-download"></i></a>
+					<a role="button" class="btn badge-pill btn-success" href="https://drive.google.com/open?id=1KUk75GuiRFcz8Y9Gu9IG0rGcD6Xh2-1H" target="_blank">WHITE PAPER &nbsp;<i class="fas fa-download"></i></a>
 				</div>
 			</div>
 		</div>
